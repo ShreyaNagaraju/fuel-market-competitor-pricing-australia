@@ -1,4 +1,4 @@
-readme_content = """# Australian Fuel Market — Competitor Pricing Analysis
+## Australian Fuel Market : Competitor Pricing Analysis
 
 A data-driven analysis of retail unleaded petrol pricing across major brands in the Western Australian market, using three years of daily station-level data from FuelWatch WA (December 2021 to May 2025).
 
