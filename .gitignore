@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Raw monthly FuelWatch CSVs and temporary demo runs
+data/raw/
+data/demo/
+

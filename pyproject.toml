@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fuelwatch-competitor-pricing"
+version = "1.0.0"
+description = "Production ETL, Competitor Pricing Analysis, Weekly Anomaly Reporting, and Power BI Kimball Star Schema Exporter for WA FuelWatch data"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Shreya Nagaraju" }
+]
+dependencies = [
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "scipy>=1.11.0",
+    "matplotlib>=3.8.0",
+    "pyarrow>=15.0.0",
+]
+
+[project.scripts]
+fuelwatch-pipeline = "run_pipeline:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+

@@ -1,0 +1,10 @@
+brand_key,brand_name,brand_tier,brand_hex_colour,is_focus_brand
+1,7-Eleven,Mid-Market,#007041,True
+2,Ampol,Major / Premium,#E63329,False
+3,BP,Major / Premium,#007A33,False
+4,Coles Express,Major / Premium,#E2001A,False
+5,Metro,Value / Independent,#888888,False
+6,Puma,Mid-Market,#1A1A1A,False
+7,Shell,Mid-Market,#FFC72C,False
+8,United,Value / Independent,#0057A8,False
+9,Woolworths,Mid-Market,#00833E,False
