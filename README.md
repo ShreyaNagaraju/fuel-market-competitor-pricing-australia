@@ -16,6 +16,22 @@ The project quantifies 7-Eleven's competitive positioning, daily price spread re
 
 ---
 
+## Power BI Executive Dashboard (PL-300 Kimball Star Schema)
+
+### Page 1: Executive Market Positioning & Spread Overview
+![Page 1: Executive Market Positioning & Spread Overview](outputs/powerbi_01_executive_overview.jpg)
+
+### Page 2: Cycle Drop Response & Competitor Lag Analysis
+![Page 2: Cycle Drop Response & Competitor Lag Analysis](outputs/powerbi_02_competitor_response_lag.jpg)
+
+### Page 3: Weekly Commercial Watchlist & Baseline Anomaly Monitor
+![Page 3: Weekly Commercial Watchlist & Baseline Anomaly Monitor](outputs/powerbi_03_weekly_anomaly_watchlist.jpg)
+
+### Kimball Dimensional Model View (`1:*` Star Schema)
+![Kimball Dimensional Model View](outputs/powerbi_04_star_schema_model_view.png)
+
+---
+
 ## Production Architecture
 
 ```text
@@ -35,7 +51,11 @@ fuel-market-competitor-pricing-australia/
 ├── tests/
 │   └── test_pipeline.py                 # Automated unit & integration test suite (7 end-to-end test cases)
 ├── notebooks/                           # Archived exploratory Jupyter notebooks (Notebooks 1, 2, and 3)
-├── outputs/                             # Generated visualisations and weekly executive briefings
+├── outputs/                             # Generated visualisations, briefings, and Power BI dashboard views
+│   ├── powerbi_01_executive_overview.jpg
+│   ├── powerbi_02_competitor_response_lag.jpg
+│   ├── powerbi_03_weekly_anomaly_watchlist.jpg
+│   ├── powerbi_04_star_schema_model_view.png
 │   ├── 01_market_positioning.png
 │   ├── 02_price_spread.png
 │   ├── 03_spread_distribution.png
