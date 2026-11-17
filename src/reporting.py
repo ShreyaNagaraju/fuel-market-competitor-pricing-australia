@@ -37,11 +37,13 @@ def get_weekly_snapshot(
     week_start = target_date - timedelta(days=6)
     prior_week_end = target_date - timedelta(days=7)
     prior_week_start = target_date - timedelta(days=13)
-    baseline_start = target_date - timedelta(weeks=weeks)
+    baseline_start = week_start - timedelta(weeks=weeks)
 
     this_week = df[(df["date"] >= week_start) & (df["date"] <= target_date)]
     prior_week = df[(df["date"] >= prior_week_start) & (df["date"] <= prior_week_end)]
-    baseline = df[(df["date"] >= baseline_start) & (df["date"] <= target_date)]
+    baseline = df[(df["date"] >= baseline_start) & (df["date"] <= prior_week_end)]
+    if baseline.empty:
+        baseline = df[(df["date"] >= target_date - timedelta(weeks=weeks)) & (df["date"] <= target_date)]
 
     this_avg = this_week.groupby("brand_clean")["avg_price"].mean().rename("price_this_week")
     prior_avg = prior_week.groupby("brand_clean")["avg_price"].mean().rename("price_prior_week")
@@ -50,11 +52,26 @@ def get_weekly_snapshot(
     snapshot = pd.concat([this_avg, prior_avg, base_avg], axis=1).round(1)
     snapshot["wow_change"] = (snapshot["price_this_week"] - snapshot["price_prior_week"]).round(1)
 
-    market_avg_this_week = float(snapshot["price_this_week"].mean())
+    if "station_count" in this_week.columns and this_week["station_count"].sum() > 0:
+        market_avg_this_week = float(
+            (this_week["avg_price"] * this_week["station_count"]).sum() / this_week["station_count"].sum()
+        )
+    else:
+        market_avg_this_week = float(snapshot["price_this_week"].mean())
+
+    if "station_count" in baseline.columns and baseline["station_count"].sum() > 0:
+        market_avg_baseline = float(
+            (baseline["avg_price"] * baseline["station_count"]).sum() / baseline["station_count"].sum()
+        )
+    else:
+        market_avg_baseline = float(snapshot["price_8wk_avg"].mean())
+
+    market_shift = market_avg_this_week - market_avg_baseline
     snapshot["vs_market"] = (snapshot["price_this_week"] - market_avg_this_week).round(1)
     snapshot["market_rank"] = snapshot["price_this_week"].rank(method="min", na_option="bottom").astype("Int64")
 
-    snapshot["deviation_from_baseline"] = (snapshot["price_this_week"] - snapshot["price_8wk_avg"]).round(1)
+    raw_dev = snapshot["price_this_week"] - snapshot["price_8wk_avg"]
+    snapshot["deviation_from_baseline"] = (raw_dev - market_shift).round(1)
     snapshot["anomaly_flag"] = snapshot["deviation_from_baseline"].abs() > threshold
 
     snapshot = snapshot.sort_values("price_this_week")

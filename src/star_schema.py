@@ -72,6 +72,7 @@ def build_dim_brand(
                 "brand_tier": BRAND_TIERS.get(brand_name, "Other"),
                 "brand_hex_colour": cfg.brand_colours.get(brand_name, BRAND_COLOURS.get(brand_name, "#888888")),
                 "is_focus_brand": brand_name == cfg.focus_brand,
+                "is_major_network": brand_name in cfg.major_benchmark_brands,
             }
         )
     return pd.DataFrame(rows)
@@ -80,20 +81,66 @@ def build_dim_brand(
 def build_dim_location(station_df: Optional[pd.DataFrame] = None) -> pd.DataFrame:
     """Build the Kimball Station Location Dimension table from cleaned station-level records."""
     if station_df is None or station_df.empty:
-        return pd.DataFrame(
-            columns=["location_key", "station_name", "address", "suburb", "region", "brand_name"]
-        )
+        return pd.DataFrame(columns=["location_key", "station_name", "address", "suburb", "region"])
 
-    loc_cols = [c for c in ["station_name", "address", "suburb", "region", "brand_clean"] if c in station_df.columns]
+    loc_cols = [c for c in ["station_name", "address", "suburb", "region"] if c in station_df.columns]
     dedup = (
         station_df[loc_cols]
-        .drop_duplicates(subset=["station_name", "brand_clean"] if "station_name" in loc_cols else loc_cols)
+        .drop_duplicates(subset=["station_name", "address"] if "address" in loc_cols else loc_cols)
         .sort_values(loc_cols)
         .reset_index(drop=True)
     )
-    dedup = dedup.rename(columns={"brand_clean": "brand_name"})
     dedup.insert(0, "location_key", range(1, len(dedup) + 1))
     return dedup
+
+
+def build_fact_station_monthly_pricing(
+    station_df: Optional[pd.DataFrame],
+    dim_brand: pd.DataFrame,
+    dim_location: pd.DataFrame,
+) -> pd.DataFrame:
+    """Build a slim station-month Fact table linking dim_location, dim_brand, and dim_date."""
+    cols = [
+        "date_key",
+        "brand_key",
+        "location_key",
+        "avg_price_cpl",
+        "min_price_cpl",
+        "max_price_cpl",
+        "observation_days",
+    ]
+    if station_df is None or station_df.empty or dim_location.empty:
+        return pd.DataFrame(columns=cols)
+
+    df = station_df.copy()
+    df["date"] = pd.to_datetime(df["date"]).dt.normalize()
+    df["month_start"] = df["date"].values.astype("datetime64[M]")
+    df["date_key"] = pd.to_datetime(df["month_start"]).dt.strftime("%Y%m%d").astype(int)
+
+    brand_key_map = dict(zip(dim_brand["brand_name"], dim_brand["brand_key"]))
+    df["brand_key"] = df["brand_clean"].map(brand_key_map)
+
+    join_cols = [c for c in ["station_name", "address"] if c in df.columns and c in dim_location.columns]
+    if not join_cols:
+        join_cols = ["station_name"]
+    df = df.merge(dim_location[join_cols + ["location_key"]], on=join_cols, how="inner")
+
+    monthly = (
+        df.groupby(["date_key", "brand_key", "location_key"], as_index=False)
+        .agg(
+            avg_price_cpl=("price_cpl", "mean"),
+            min_price_cpl=("price_cpl", "min"),
+            max_price_cpl=("price_cpl", "max"),
+            observation_days=("date", "nunique"),
+        )
+        .sort_values(["date_key", "brand_key", "location_key"])
+        .reset_index(drop=True)
+    )
+    num_cols = ["avg_price_cpl", "min_price_cpl", "max_price_cpl"]
+    monthly[num_cols] = monthly[num_cols].round(2)
+    monthly["brand_key"] = monthly["brand_key"].astype(int)
+    monthly["location_key"] = monthly["location_key"].astype(int)
+    return monthly[cols]
 
 
 def build_fact_daily_brand_pricing(
@@ -111,6 +158,7 @@ def build_fact_daily_brand_pricing(
     df["date_key"] = df["date"].dt.strftime("%Y%m%d").astype(int)
     df["brand_key"] = df["brand_clean"].map(brand_key_map).astype(int)
 
+    df["daily_price_change_cpl"] = df.groupby("brand_clean")["avg_price"].diff().round(2)
     df["rolling_7d_price_cpl"] = (
         df.groupby("brand_clean")["avg_price"]
         .transform(lambda s: s.rolling(window=cfg.rolling_window_days, min_periods=cfg.rolling_min_periods).mean())
@@ -119,16 +167,34 @@ def build_fact_daily_brand_pricing(
     baseline_days = cfg.weekly_lookback_weeks * 7
     df["rolling_56d_baseline_cpl"] = (
         df.groupby("brand_clean")["avg_price"]
-        .transform(lambda s: s.rolling(window=baseline_days, min_periods=7).mean())
+        .transform(lambda s: s.shift(7).rolling(window=baseline_days, min_periods=7).mean())
         .round(2)
     )
 
-    wide, _ = build_wide_price_matrix(df, cfg)
-    daily_market_avg = wide.mean(axis=1).round(2).rename("daily_market_avg_cpl")
+    # Station-weighted daily market average
+    weighted_daily = (
+        df.assign(weighted_px=df["avg_price"] * df["station_count"])
+        .groupby("date", as_index=True)
+        .agg(total_px=("weighted_px", "sum"), total_st=("station_count", "sum"))
+    )
+    daily_market_avg = (
+        (weighted_daily["total_px"] / weighted_daily["total_st"].replace(0, np.nan))
+        .round(2)
+        .rename("daily_market_avg_cpl")
+    )
+    daily_market_baseline = (
+        daily_market_avg.shift(7).rolling(window=baseline_days, min_periods=7).mean().round(2)
+    )
+    daily_market_baseline_shift = (daily_market_avg - daily_market_baseline).rename("market_baseline_shift_cpl")
 
-    competitors = [c for c in wide.columns if c != cfg.focus_brand]
-    if competitors:
-        daily_cheapest_comp = wide[competitors].min(axis=1).round(2).rename("daily_cheapest_competitor_cpl")
+    wide, _ = build_wide_price_matrix(df, cfg)
+    major_competitors = [
+        c for c in wide.columns if c != cfg.focus_brand and c in cfg.major_benchmark_brands
+    ]
+    if not major_competitors:
+        major_competitors = [c for c in wide.columns if c != cfg.focus_brand]
+    if major_competitors:
+        daily_cheapest_comp = wide[major_competitors].min(axis=1).round(2).rename("daily_cheapest_competitor_cpl")
     else:
         daily_cheapest_comp = wide.min(axis=1).round(2).rename("daily_cheapest_competitor_cpl")
 
@@ -137,16 +203,21 @@ def build_fact_daily_brand_pricing(
     daily_mkt_change = market_change.round(2).rename("daily_market_change_cpl")
 
     df = df.merge(daily_market_avg, left_on="date", right_index=True, how="left")
+    df = df.merge(daily_market_baseline_shift, left_on="date", right_index=True, how="left")
     df = df.merge(daily_cheapest_comp, left_on="date", right_index=True, how="left")
     df = df.merge(daily_mkt_change, left_on="date", right_index=True, how="left")
 
+    df["weighted_price_sum_cpl"] = (df["avg_price"] * df["station_count"]).round(2)
     df["spread_vs_market_cpl"] = (df["avg_price"] - df["daily_market_avg_cpl"]).round(2)
     df["spread_vs_cheapest_competitor_cpl"] = (df["avg_price"] - df["daily_cheapest_competitor_cpl"]).round(2)
     df["daily_price_rank"] = (
         df.groupby("date")["avg_price"].rank(method="min", na_option="bottom").astype(int)
     )
 
-    df["deviation_from_8wk_baseline_cpl"] = (df["avg_price"] - df["rolling_56d_baseline_cpl"]).round(2)
+    raw_dev = df["avg_price"] - df["rolling_56d_baseline_cpl"]
+    df["deviation_from_8wk_baseline_cpl"] = (
+        raw_dev - df["market_baseline_shift_cpl"].fillna(0.0)
+    ).round(2)
     df["is_anomaly_2cpl"] = df["deviation_from_8wk_baseline_cpl"].abs() > cfg.weekly_anomaly_threshold_cpl
     df["is_spread_over_5cpl"] = df["spread_vs_cheapest_competitor_cpl"] > cfg.high_spread_threshold_cpl
     df["is_at_or_below_cheapest_competitor"] = df["spread_vs_cheapest_competitor_cpl"] <= 0.0
@@ -164,13 +235,13 @@ def build_fact_daily_brand_pricing(
     ordered_cols = [
         "date_key",
         "brand_key",
-        "date",
-        "brand_clean",
         "avg_price_cpl",
         "median_price_cpl",
         "min_price_cpl",
         "max_price_cpl",
         "station_count",
+        "weighted_price_sum_cpl",
+        "daily_price_change_cpl",
         "rolling_7d_price_cpl",
         "rolling_56d_baseline_cpl",
         "daily_market_avg_cpl",
@@ -227,9 +298,7 @@ def build_fact_market_drop_response(
             row: Dict[str, object] = {
                 "event_id": event_counter,
                 "event_date_key": event_date_key,
-                "event_date": event_date_ts,
                 "brand_key": brand_key_map[brand],
-                "brand_clean": brand,
                 "market_drop_cpl": mkt_drop_val,
                 "pre_event_price_cpl": round(float(pre_price[brand]), 2),
                 "lag_days": lag_days,
@@ -262,6 +331,7 @@ def build_star_schema_tables(
     dim_location = build_dim_location(station_df)
     fact_daily_brand_pricing = build_fact_daily_brand_pricing(daily_avg_df, dim_brand, cfg)
     fact_market_drop_response = build_fact_market_drop_response(daily_avg_df, dim_brand, cfg)
+    fact_station_monthly_pricing = build_fact_station_monthly_pricing(station_df, dim_brand, dim_location)
 
     return {
         "dim_date": dim_date,
@@ -269,6 +339,7 @@ def build_star_schema_tables(
         "dim_location": dim_location,
         "fact_daily_brand_pricing": fact_daily_brand_pricing,
         "fact_market_drop_response": fact_market_drop_response,
+        "fact_station_monthly_pricing": fact_station_monthly_pricing,
     }
 
 
@@ -290,7 +361,7 @@ def export_star_schema(
 
     tables = build_star_schema_tables(daily_df, st_df, cfg)
     for table_name, df in tables.items():
-        if df.empty and table_name == "dim_location":
+        if df.empty and table_name in ("dim_location", "fact_station_monthly_pricing"):
             continue
         parquet_path = target_dir / f"{table_name}.parquet"
         csv_path = target_dir / f"{table_name}.csv"

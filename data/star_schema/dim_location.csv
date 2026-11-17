@@ -1,661 +1,660 @@
-location_key,station_name,address,suburb,region,brand_name
-1,53 Mile Roadhouse,31 South Western Hwy,PINJARRA,Murray,United
-2,7-Eleven Alkimos,10 Carlsbad Prom,ALKIMOS,North of River,7-Eleven
-3,7-Eleven Ascot,194 Great Eastern Hwy,ASCOT,South of River,7-Eleven
-4,7-Eleven Balcatta,174 Balcatta Rd,BALCATTA,North of River,7-Eleven
-5,7-Eleven Baldivis,370 Baldivis Rd,BALDIVIS,South of River,7-Eleven
-6,7-Eleven Balga,102 Princess Rd,BALGA,North of River,7-Eleven
-7,7-Eleven Banksia Grove,1/300 Joseph Banks Bvd,BANKSIA GROVE,North of River,7-Eleven
-8,7-Eleven Bassendean,302-318 Collier Rd,BASSENDEAN,North of River,7-Eleven
-9,7-Eleven Bentley,1133-1135 Albany Hwy,BENTLEY,South of River,7-Eleven
-10,7-Eleven Bibra Lake,35 Port Kembla Dr,BIBRA LAKE,South of River,7-Eleven
-11,7-Eleven Booragoon,492 Marmion St,BOORAGOON,South of River,7-Eleven
-12,7-Eleven Brabham,3 Marvel Ent,BRABHAM,East/Hills,7-Eleven
-13,7-Eleven Bunbury East,8D Picton Rd,EAST BUNBURY,Bunbury,7-Eleven
-14,7-Eleven Busselton,81-93 West St,BUSSELTON,Busselton-Shire,7-Eleven
-15,7-Eleven Butler,270 Butler Bvd,BUTLER,North of River,7-Eleven
-16,7-Eleven Byford South,25 Abernethy Rd,BYFORD,South of River,7-Eleven
-17,7-Eleven Canning Vale,Lot 322 Ranford Rd,CANNING VALE,South of River,7-Eleven
-18,7-Eleven Carlisle,232 Orrong Rd,CARLISLE,South of River,7-Eleven
-19,7-Eleven Caversham,2131 West Swan Rd,CAVERSHAM,North of River,7-Eleven
-20,7-Eleven Clarkson,19 Neerabup Dr,CLARKSON,North of River,7-Eleven
-21,7-Eleven Cockburn Central,814 North Lake Rd,COCKBURN CENTRAL,South of River,7-Eleven
-22,7-Eleven Dalyellup,51 Tiffany Ctr,DALYELLUP,Capel,7-Eleven
-23,7-Eleven Dunsborough,100 Commonage Rd,DUNSBOROUGH,Busselton-Shire,7-Eleven
-24,7-Eleven Eaton,15 Albatross Cres,EATON,Dardanup,7-Eleven
-25,7-Eleven Forrestdale,2 Haydock St,FORRESTDALE,South of River,7-Eleven
-26,7-Eleven Golden Bay,52 Thundelarra Dr,GOLDEN BAY,South of River,7-Eleven
-27,7-Eleven Gosnells,303 Corfield St,GOSNELLS,South of River,7-Eleven
-28,7-Eleven Greenfields,1 Eaglemont St,GREENFIELDS,Mandurah,7-Eleven
-29,7-Eleven Greenfields South,13 Lakes Rd,GREENFIELDS,Mandurah,7-Eleven
-30,7-Eleven Harrisdale,120 Yellowwood Ave,HARRISDALE,South of River,7-Eleven
-31,7-Eleven Haynes,1256 Armadale Rd,ARMADALE,South of River,7-Eleven
-32,7-Eleven Joondalup,8 Buick Way,JOONDALUP,North of River,7-Eleven
-33,7-Eleven Kardinya,1 South St,KARDINYA,South of River,7-Eleven
-34,7-Eleven Kelmscott,105 Champion Dr,KELMSCOTT,South of River,7-Eleven
-35,7-Eleven Kelmscott Central,4 Church St,KELMSCOTT,South of River,7-Eleven
-36,7-Eleven Landsdale,8 Mullingar Way,LANDSDALE,North of River,7-Eleven
-37,7-Eleven Maddington South,1969 Albany Hwy,MADDINGTON,South of River,7-Eleven
-38,7-Eleven Malaga,650 Marshall Rd,MALAGA,North of River,7-Eleven
-39,7-Eleven Malvern Springs,324 The Broadway,ELLENBROOK,North of River,7-Eleven
-40,7-Eleven Mandurah,296 Pinjarra Rd,MANDURAH,Mandurah,7-Eleven
-41,7-Eleven Middle Swan,40-42 Great Northern Hwy,MIDDLE SWAN,East/Hills,7-Eleven
-42,7-Eleven Midland,8 Clayton St,MIDLAND,East/Hills,7-Eleven
-43,7-Eleven Midvale,83 Farrall Rd,MIDVALE,East/Hills,7-Eleven
-44,7-Eleven Morley,162 Russell St,MORLEY,North of River,7-Eleven
-45,7-Eleven Queens Park,235 Welshpool Rd,QUEENS PARK,South of River,7-Eleven
-46,7-Eleven Ridgewood,35 Kilrush Turn,RIDGEWOOD,North of River,7-Eleven
-47,7-Eleven Rockingham,129 Dixon Rd,EAST ROCKINGHAM,South of River,7-Eleven
-48,7-Eleven Rockingham Central,2 Sepia Ct,ROCKINGHAM,South of River,7-Eleven
-49,7-Eleven Southern River,481 Balfour St,SOUTHERN RIVER,South of River,7-Eleven
-50,7-Eleven Stirling,377 Wanneroo Rd,BALCATTA,North of River,7-Eleven
-51,7-Eleven Success,660 Beeliar Dr,SUCCESS,South of River,7-Eleven
-52,7-Eleven Thornlie,125 Murdoch Rd,THORNLIE,South of River,7-Eleven
-53,7-Eleven Treendale,147-149 Grand Ent,AUSTRALIND,Harvey,7-Eleven
-54,7-Eleven Wangara,79 Gnangara Rd,WANGARA,North of River,7-Eleven
-55,7-Eleven Wanneroo,990 Wanneroo Rd,WANNEROO,North of River,7-Eleven
-56,7-Eleven Wanneroo South,929-931 Wanneroo Rd,WANNEROO,North of River,7-Eleven
-57,7-Eleven Wattle Grove,332 Hale Rd,WATTLE GROVE,East/Hills,7-Eleven
-58,7-Eleven Withers,1 Island Queen St,WITHERS,Bunbury,7-Eleven
-59,7-Eleven Yanchep,2 Tamala Lane,YANCHEP,North of River,7-Eleven
-60,Ampol Albany Diesel Stop,634 Menang Dr,WILLYUNG,Albany,Ampol
-61,Ampol Bibra Lake Diesel Stop,5 Cocos Dr,BIBRA LAKE,South of River,Ampol
-62,Ampol Bridgetown Diesel Stop,1 Spencer St,BRIDGETOWN,B-Town/G-Bushes,Ampol
-63,Ampol Collie,124 Throssell St,COLLIE,Collie,Ampol
-64,Ampol Foodary Albany York St,269 York St,ALBANY,Albany,Ampol
-65,Ampol Foodary Altone Road,159 Altone Rd,BEECHBORO,North of River,Ampol
-66,Ampol Foodary Applecross,918 Canning Hwy,APPLECROSS,South of River,Ampol
-67,Ampol Foodary Ascot,204 Great Eastern Hwy,ASCOT,South of River,Ampol
-68,Ampol Foodary Ashby,2 Hollosy Way,ASHBY,North of River,Ampol
-69,Ampol Foodary Baldivis,614 Baldivis Rd,BALDIVIS,South of River,Ampol
-70,Ampol Foodary Bannister Road,60 Bannister Rd,CANNING VALE,South of River,Ampol
-71,Ampol Foodary Belmont,303 Great Eastern Hwy,BELMONT,South of River,Ampol
-72,Ampol Foodary Bentley,91-93 Manning Rd,BENTLEY,South of River,Ampol
-73,Ampol Foodary Broome,50 Mavis Rd,BILINGURR,Broome,Ampol
-74,Ampol Foodary Bunbury,1 Forrest Ave,BUNBURY,Bunbury,Ampol
-75,Ampol Foodary Busselton,115 Strelly St,BUSSELTON,Busselton-Shire,Ampol
-76,Ampol Foodary Butler,11 Headingly Cr,BUTLER,North of River,Ampol
-77,Ampol Foodary Byford,Lot 22 South Western Hwy,BYFORD,South of River,Ampol
-78,Ampol Foodary Cannington,1346 Albany Hwy,CANNINGTON,South of River,Ampol
-79,Ampol Foodary Carine,510 Beach Rd,CARINE,North of River,Ampol
-80,Ampol Foodary Carnarvon,595 Robinson St,KINGSFORD,Carnarvon,Ampol
-81,Ampol Foodary Clarkson,7 Ocean Keys Bvd,CLARKSON,North of River,Ampol
-82,Ampol Foodary Cockburn Central,875 Beeliar Dr,JANDAKOT,South of River,Ampol
-83,Ampol Foodary Coolgardie,110-114 Bayley St,COOLGARDIE,Coolgardie,Ampol
-84,Ampol Foodary Dawesville,191 Bailey Bvd,DAWESVILLE,Mandurah,Ampol
-85,Ampol Foodary Doubleview,365 Scarborough Beach Rd,DOUBLEVIEW,North of River,Ampol
-86,Ampol Foodary East Fremantle,176 Canning Hwy,EAST FREMANTLE,South of River,Ampol
-87,Ampol Foodary East Perth,157 Lord St,PERTH,North of River,Ampol
-88,Ampol Foodary Eaton,1 Pratt Rd,EATON,Dardanup,Ampol
-89,Ampol Foodary Erskine,112 Oakleigh Dr,ERSKINE,Mandurah,Ampol
-90,Ampol Foodary Esperance,59 Dempster St,ESPERANCE,Esperance,Ampol
-91,Ampol Foodary Exmouth,77 Maidstone Cr,EXMOUTH,Exmouth,Ampol
-92,Ampol Foodary Falcon (Miami Beach),2 Baroy St,FALCON,Mandurah,Ampol
-93,Ampol Foodary Forrest Highway North,Lot 602 Forrest Hwy,WEST PINJARRA,Murray,Ampol
-94,Ampol Foodary Forrest Highway South,Lot 601 Forrest Hwy,WEST PINJARRA,Murray,Ampol
-95,Ampol Foodary Forrestdale,63 Alex Wood Dr,FORRESTDALE,South of River,Ampol
-96,Ampol Foodary Gelorup,39 Bussell Hwy,GELORUP,Capel,Ampol
-97,Ampol Foodary Glendalough,2 Jon Sanders Dr,GLENDALOUGH,North of River,Ampol
-98,Ampol Foodary Gosnells,158 Corfield St,GOSNELLS,South of River,Ampol
-99,Ampol Foodary Gosnells North,2100 Albany Hwy,GOSNELLS,South of River,Ampol
-100,Ampol Foodary Greenfields,35 Minilya Pkwy,GREENFIELDS,Mandurah,Ampol
-101,Ampol Foodary High Wycombe,967-969 Abernethy Rd,HIGH WYCOMBE,East/Hills,Ampol
-102,Ampol Foodary Joondalup,420 Joondalup Dr,JOONDALUP,North of River,Ampol
-103,Ampol Foodary Kalgoorlie,581 Hannan St,SOMERVILLE,Kalgoorlie,Ampol
-104,Ampol Foodary Kalgoorlie South,146 Boulder Rd,SOUTH KALGOORLIE,Kalgoorlie,Ampol
-105,Ampol Foodary Karratha,Lot 3861 Bathgate Rd,NICKOL,Karratha,Ampol
-106,Ampol Foodary Karrinyup,490 Karrinyup Rd,GWELUP,North of River,Ampol
-107,Ampol Foodary Kelmscott,2877 Albany Hwy,KELMSCOTT,South of River,Ampol
-108,Ampol Foodary Kewdale,2 Fenton St,KEWDALE,South of River,Ampol
-109,Ampol Foodary Kingsley,86 Kingsley Dr,KINGSLEY,North of River,Ampol
-110,Ampol Foodary Kwinana,Cnr Mandurah Rd & Wellard Rd,KWINANA BEACH,South of River,Ampol
-111,Ampol Foodary Lakelands,Lot 50 Mandurah Rd,MEADOW SPRINGS,Mandurah,Ampol
-112,Ampol Foodary Leederville,319 Vincent St,LEEDERVILLE,North of River,Ampol
-113,Ampol Foodary Livingston,110 Ranford Rd,CANNING VALE,South of River,Ampol
-114,Ampol Foodary Malaga,1 Capital Rd,MALAGA,North of River,Ampol
-115,Ampol Foodary Malaga Drive,76 Malaga Dr,MALAGA,North of River,Ampol
-116,Ampol Foodary Melville,585 Canning Hwy,ALFRED COVE,South of River,Ampol
-117,Ampol Foodary Midvale,371 Great Eastern Hwy,MIDVALE,East/Hills,Ampol
-118,Ampol Foodary Morley,298 Benara Rd,MORLEY,North of River,Ampol
-119,Ampol Foodary Mosman Park,676 Stirling Hwy,MOSMAN PARK,North of River,Ampol
-120,Ampol Foodary Mt Lawley,810 Beaufort St,MOUNT LAWLEY,North of River,Ampol
-121,Ampol Foodary Mundaring,5895 Great Eastern Hwy,MUNDARING,East/Hills,Ampol
-122,Ampol Foodary Murdoch,10 Robson Way,MURDOCH,South of River,Ampol
-123,Ampol Foodary Nedlands,7 Broadway,NEDLANDS,North of River,Ampol
-124,Ampol Foodary Newman,Lot 1328 Newman Dr,NEWMAN,Newman,Ampol
-125,Ampol Foodary Norseman,1 Princep St,NORSEMAN,Norseman,Ampol
-126,Ampol Foodary North Road,204 North Rd,YAKAMIA,Albany,Ampol
-127,Ampol Foodary North Wanneroo,2624 Wanneroo Rd,NOWERGUP,North of River,Ampol
-128,Ampol Foodary North Yunderup,868 Pinjarra Rd,FURNISSDALE,Murray,Ampol
-129,Ampol Foodary Northlands,391 Wanneroo Rd,BALCATTA,North of River,Ampol
-130,Ampol Foodary O'Connor,309 Stock Rd,O'CONNOR,South of River,Ampol
-131,Ampol Foodary Riverton,268 High Rd,RIVERTON,South of River,Ampol
-132,Ampol Foodary Rivervale,111 Great Eastern Hwy,RIVERVALE,South of River,Ampol
-133,Ampol Foodary Rockingham,29 Dixon Rd,ROCKINGHAM,South of River,Ampol
-134,Ampol Foodary Scarborough,74 Scarborough Beach Rd,SCARBOROUGH,North of River,Ampol
-135,Ampol Foodary Secret Harbour,420 Secret Harbour Bvd,SECRET HARBOUR,South of River,Ampol
-136,Ampol Foodary South Hedland,67 Hamilton Rd,SOUTH HEDLAND,Port Hedland,Ampol
-137,Ampol Foodary South Lake,2 Omeo St,SOUTH LAKE,South of River,Ampol
-138,Ampol Foodary Stratton,240 Toodyay Rd,STRATTON,East/Hills,Ampol
-139,Ampol Foodary Subiaco,194 Rokeby Rd,SUBIACO,North of River,Ampol
-140,Ampol Foodary Thornlie,223 Yale Rd,THORNLIE,South of River,Ampol
-141,Ampol Foodary Thornlie Square,316 Spencer Rd,THORNLIE,South of River,Ampol
-142,Ampol Foodary Wangara,79 Buckingham Dr,WANGARA,North of River,Ampol
-143,Ampol Foodary Warnbro,2 Bristol St,WARNBRO,South of River,Ampol
-144,Ampol Foodary Westminster,436 Wanneroo Rd,WESTMINSTER,North of River,Ampol
-145,Ampol Foodary Willetton,169 High Rd,WILLETTON,South of River,Ampol
-146,Ampol Foodary Williams,56 Albany Hwy,WILLIAMS,Williams,Ampol
-147,Ampol Foodary Wonthella,40 North West Coastal Hwy,WONTHELLA,Geraldton,Ampol
-148,Ampol Foodary Yanchep,1 Morwell St,YANCHEP,North of River,Ampol
-149,Ampol Foodary Yangebup,289 Beeliar Dr,YANGEBUP,South of River,Ampol
-150,Ampol Jurien Bay,22 Bashford St,JURIEN BAY,Jurien,Ampol
-151,Ampol Kalgoorlie Diesel Stop,2 Cunningham Rd,WEST KALGOORLIE,Boulder,Ampol
-152,Ampol Maddington Truck Stop,18 Orchard Rd,MADDINGTON,South of River,Ampol
-153,Ampol Meckering,31 Dreyer St,MECKERING,Meckering,Ampol
-154,Ampol Meckering Roadhouse,31 Dreyer St,MECKERING,Meckering,Ampol
-155,Ampol Narrogin,12 Clayton Rd,NARROGIN,Narrogin,Ampol
-156,Ampol Picton Depot With Front,1 Wimbridge Rd,PICTON,Bunbury,Ampol
-157,Ampol Rous Head,Cnr North Mole Dr & Rous Head Rd,NORTH FREMANTLE,North of River,Ampol
-158,Ampol StarMart Exmouth,77 Maidstone Cr,EXMOUTH,Exmouth,Ampol
-159,Ampol Wedgefield Diesel Stop,12-14 Cajarina Rd,WEDGEFIELD,Port Hedland,Ampol
-160,Ampol Welshpool Diesel Stop,119 Kurnall Rd,WELSHPOOL,South of River,Ampol
-161,Ampol West Busselton,259 Bussell Hwy,WEST BUSSELTON,Busselton-Shire,Ampol
-162,BP 2go Armadale,3249 Albany Hwy,ARMADALE,South of River,BP
-163,BP 2go Australind,80 Old Coast Rd,AUSTRALIND,Harvey,BP
-164,BP 2go Bellevue,59 Great Eastern Hwy,BELLEVUE,East/Hills,BP
-165,BP 2go Burrendah,69 Pinetree Gully Rd,WILLETTON,South of River,BP
-166,BP 2go Cannington,1443 Albany Hwy,CANNINGTON,South of River,BP
-167,BP 2go Collins Road,121 Collins Rd,WILLETTON,South of River,BP
-168,BP 2go Morrison Road,228 Morrison Rd,MIDVALE,East/Hills,BP
-169,BP 2go Noranda,40 Benara Rd,NORANDA,North of River,BP
-170,BP 2go Silver Sands,183-187 Mandurah Tce,MANDURAH,Mandurah,BP
-171,BP 2go Woodvale,941 Whitfords Ave,WOODVALE,North of River,BP
-172,BP Allway,35 Albany Hwy,ALBANY,Albany,BP
-173,BP Applecross,848 Canning Hwy,APPLECROSS,South of River,BP
-174,BP Attadale,530 Canning Hwy,ATTADALE,South of River,BP
-175,BP Augusta,64-66 Blackwood Ave,AUGUSTA,Augusta-M River,BP
-176,BP Balcatta,53 Erindale Rd,BALCATTA,North of River,BP
-177,BP Baldivis Northbound Travel Centre,Lot 191 Paparone Rd,BALDIVIS,South of River,BP
-178,BP Baldivis Southbound Travel Centre,Lot 192 Leary Rd,BALDIVIS,South of River,BP
-179,BP Baldivis West,909 Mandurah Rd,BALDIVIS,South of River,BP
-180,BP Ballajura,2 Illawarra Cres North,BALLAJURA,North of River,BP
-181,BP Baskerville,1084 Great Northern Hwy,BASKERVILLE,East/Hills,BP
-182,BP Beeliar,701 Beeliar Dr,COCKBURN CENTRAL,South of River,BP
-183,BP Beldon,261 Eddystone Ave,BELDON,North of River,BP
-184,BP Bibra Lake,2 Wellard St,BIBRA LAKE,South of River,BP
-185,BP Broome Central Service Centre,2 Coghlan St,DJUGUN,Broome,BP
-186,BP Bull Creek,83 Wheatley Dr,BULL CREEK,South of River,BP
-187,BP Busselton,26 Albert St,BUSSELTON,Busselton-Shire,BP
-188,BP Canning Vale,1 Wilfred Rd,CANNING VALE,South of River,BP
-189,BP Canning Vale OPT,13 Bannister Rd,CANNING VALE,South of River,BP
-190,BP Carnarvon,1134 North West Coastal Hwy,BROWN RANGE,Carnarvon,BP
-191,BP Caversham,40 Bennett St,CAVERSHAM,North of River,BP
-192,BP Clarkson,28K Caloundra Rd,CLARKSON,North of River,BP
-193,BP Connect Ascot (WA),210 Great Eastern Hwy,ASCOT,South of River,BP
-194,BP Connect Beaumauris,2 Prendiville Ave,OCEAN REEF,North of River,BP
-195,BP Connect Carlisle,44 Archer St,CARLISLE,South of River,BP
-196,BP Connect Currambine,2 Sunlander Dr,CURRAMBINE,North of River,BP
-197,BP Connect East Perth,68-70 Brown St,EAST PERTH,North of River,BP
-198,BP Connect Karrinyup,190 Karrinyup Rd,KARRINYUP,North of River,BP
-199,BP Connect Kwinana Hub,4 Chisham Ave,KWINANA TOWN CENTRE,South of River,BP
-200,BP Connect Main Street,218 Main St,OSBORNE PARK,North of River,BP
-201,BP Connect Merriwa,2 Ridgewood Bvd,RIDGEWOOD,North of River,BP
-202,BP Connect Myaree,246 Leach Hwy,MYAREE,South of River,BP
-203,BP Connect North Perth,349 Charles St,NORTH PERTH,North of River,BP
-204,BP Connect Padbury,2 Warburton Ave,PADBURY,North of River,BP
-205,BP Connect Palm Springs,214 Warnbro Sound Ave,WARNBRO,South of River,BP
-206,BP Connect Phoenix,222 Rockingham Rd,SPEARWOOD,South of River,BP
-207,BP Connect Riverton,339 High Rd,RIVERTON,South of River,BP
-208,BP Connect Rockingham Park,2 Chalgrove Ave,ROCKINGHAM,South of River,BP
-209,BP Connect South Perth,9 Mends St,SOUTH PERTH,South of River,BP
-210,BP Connect Thomsons Lake,810 Beeliar Dr,SUCCESS,South of River,BP
-211,BP Connect Wellington Rd,261 Walter Rd West,MORLEY,North of River,BP
-212,BP Connect Wembley,240 Cambridge St,WEMBLEY,North of River,BP
-213,BP Connect West Coast,11 Scarborough Beach Rd,SCARBOROUGH,North of River,BP
-214,BP Cowaramup,1 Roy Earl Dr,COWARAMUP,Augusta-M River,BP
-215,BP Crystal Brook (Lesmurdie),7 Welshpool Rd East,LESMURDIE,East/Hills,BP
-216,BP Cunderdin Roadhouse,Lot 6 Great Eastern Hwy,CUNDERDIN,Cunderdin,BP
-217,BP Denmark,44 South Coast Hwy,DENMARK,Denmark,BP
-218,BP Derby,138 Loch St,DERBY,Derby,BP
-219,BP Dog Swamp,4 Wanneroo Rd,YOKINE,North of River,BP
-220,BP Donnybrook,15 South Western Hwy,DONNYBROOK,D-Brook/Bal-Up,BP
-221,BP Dunsborough,238 Naturaliste Tce,DUNSBOROUGH,Busselton-Shire,BP
-222,BP East Rockingham,137 Dixon Rd,EAST ROCKINGHAM,South of River,BP
-223,BP Edgewater,2 The Gateway,EDGEWATER,North of River,BP
-224,BP Ellenbrook,180 The Promenade,ELLENBROOK,North of River,BP
-225,BP Embleton,484 Walter Rd East,EMBLETON,North of River,BP
-226,BP Fitzroy Crossing,Lot 315 Great Northern Hwy,FITZROY CROSSING,Fitzroy Cross,BP
-227,BP Forrestdale,2 Alex Wood Dr,FORRESTDALE,South of River,BP
-228,BP Forrestfield,155 Hale Rd,FORRESTFIELD,East/Hills,BP
-229,BP Golden Gate,438 Hannan St,KALGOORLIE,Kalgoorlie,BP
-230,BP Greenwood,11 Coolibah Dr,GREENWOOD,North of River,BP
-231,BP Greenwood North,1 Canham Way,GREENWOOD,North of River,BP
-232,BP Halls Head,2 Guava Way,HALLS HEAD,Mandurah,BP
-233,BP Henley Brook,1520 Gnangara Rd,HENLEY BROOK,North of River,BP
-234,BP Highgate,342 Beaufort St,PERTH,North of River,BP
-235,BP Huntingdale,68 Warton Rd,HUNTINGDALE,South of River,BP
-236,BP Jindalee,2 Abello Bvd,JINDALEE,North of River,BP
-237,BP Jurien Bay,110 Bashford St,JURIEN BAY,Jurien,BP
-238,BP Kalgoorlie-Boulder Truckstop,248 Celebration Rd,YILKARI,Boulder,BP
-239,BP Kambalda,Lot 35 Goldfields Hwy,KAMBALDA EAST,Kambalda,BP
-240,BP Kardinya,88 Gilbertson Rd,KARDINYA,South of River,BP
-241,BP Karratha Service Station,30 Balmoral Rd,KARRATHA,Karratha,BP
-242,BP Karratha West,Lot 9 Resource Rd,GAP RIDGE,Karratha,BP
-243,BP Kelmscott,2907 Albany Hwy,KELMSCOTT,South of River,BP
-244,BP Kenwick,48 Courtney Pl,WATTLE GROVE,East/Hills,BP
-245,BP Kewdale,549 Abernethy Rd,KEWDALE,South of River,BP
-246,BP Koondoola,28 Koondoola Ave,KOONDOOLA,North of River,BP
-247,BP Langford,230-234 Nicholson Rd,LANGFORD,South of River,BP
-248,BP Maida Vale,269 Kalamunda Rd,MAIDA VALE,East/Hills,BP
-249,BP Malaga,370 Victoria Rd,MALAGA,North of River,BP
-250,BP Mandurah,304 Pinjarra Rd,MANDURAH,Mandurah,BP
-251,BP Manjimup,96 Giblett St,MANJIMUP,Manjimup,BP
-252,BP Manning,73 Manning Rd,COMO,South of River,BP
-253,BP Mindarie,360 Anchorage Dr North,MINDARIE,North of River,BP
-254,BP Moora Depot,153 Gardiner St,MOORA,Moora,BP
-255,BP Morley,335 Walter Rd West,MORLEY,North of River,BP
-256,BP Mount Barker,25 Mitchell Rd,MOUNT BARKER,Mt Barker,BP
-257,BP Mullaloo,101 Dampier Av,MULLALOO,North of River,BP
-258,BP Munglinup,16 Tubada St,MUNGLINUP,Munglinup,BP
-259,BP Narrogin,37 Federal St,NARROGIN,Narrogin,BP
-260,BP Naval Base,1351 Rockingham Rd,NAVAL BASE,South of River,BP
-261,BP Newman South,101 Great Northern Hwy,NEWMAN,Newman,BP
-262,BP Nookenburra,386 Scarborough Beach Rd,INNALOO,North of River,BP
-263,BP Norseman,Lot 2 Eyre Hwy,NORSEMAN,Norseman,BP
-264,BP Northam OPT,78 Old York Rd,NORTHAM,Northam-Shire,BP
-265,BP Parklands,85 Forrest Ave,SOUTH BUNBURY,Bunbury,BP
-266,BP Pemberton Garage & Service Station,84 Brockman St,PEMBERTON,Manjimup,BP
-267,BP Piara Waters,12 Erade Dr,PIARA WATERS,South of River,BP
-268,BP Picton Wetherley Dr,24 Wetherly Dr,PICTON,Bunbury,BP
-269,BP Port Hedland,90 Anderson St,PORT HEDLAND,Port Hedland,BP
-270,BP Port Hedland Boulevard,150 Anderson St,PORT HEDLAND,Port Hedland,BP
-271,BP Port Kennedy,46 Bakewell Dr,PORT KENNEDY,South of River,BP
-272,BP Ravensthorpe,47 Morgans St,RAVENSTHORPE,Ravensthorpe,BP
-273,BP Redcliffe,419 Great Eastern Hwy,REDCLIFFE,South of River,BP
-274,BP Roadhouse Bridgetown,43 Hampton St,BRIDGETOWN,B-Town/G-Bushes,BP
-275,BP Roadhouse Dongara,30373 Brand Hwy,DONGARA,Dongara,BP
-276,BP Roadhouse Fitzroy Crossing,Lot 315 Great Northern Hwy,FITZROY CROSSING,Fitzroy Cross,BP
-277,BP Roadhouse Harvey,18 South Western Hwy,HARVEY,Harvey,BP
-278,BP Rosegarden,129 Stirling Hwy,NEDLANDS,North of River,BP
-279,BP Sawyers Valley,10895 Great Eastern Hwy,SAWYERS VALLEY,East/Hills,BP
-280,BP Shinju Broome,101 Guy St,BROOME,Broome,BP
-281,BP Singleton,2514 Mandurah Rd,SINGLETON,South of River,BP
-282,BP Sorrento,128 West Coast Dr,SORRENTO,North of River,BP
-283,BP South Bunbury,188 Spencer St,SOUTH BUNBURY,Bunbury,BP
-284,BP South Fremantle,229B Hampton Rd,SOUTH FREMANTLE,South of River,BP
-285,BP South Hedland,2 Throssell Rd,SOUTH HEDLAND,Port Hedland,BP
-286,BP Spencer Park Service Station,30 Angove Rd,SPENCER PARK,Albany,BP
-287,BP The Lakes Roadhouse,13724 Great Eastern Hwy,THE LAKES,East/Hills,BP
-288,BP Thornlie,459 Nicholson Rd,CANNING VALE,South of River,BP
-289,BP Waikiki,430 Safety Bay Rd,SAFETY BAY,South of River,BP
-290,BP Walpole,18 Nockolds St,WALPOLE,Manjimup,BP
-291,BP Welshpool,1 Ballantyne Rd,KEWDALE,South of River,BP
-292,BP Westgate,85 Queen Victoria St,FREMANTLE,South of River,BP
-293,BP Williams Roadhouse,16 Albany Hwy,WILLIAMS,Williams,BP
-294,BP Wonthella Service Station,190 North West Coastal Hwy,WEBBERTON,Geraldton,BP
-295,BP Woodbridge,380 Great Eastern Hwy,WOODBRIDGE,South of River,BP
-296,BP Wubin,80-82 Great Northern Hwy,WUBIN,Wubin,BP
-297,Binningup General Store,21 Coronation Dr,BINNINGUP,Harvey,Ampol
-298,Caltex Woolworths Alkimos,11 Shorehaven Bvd,ALKIMOS,North of River,Woolworths
-299,Caltex Woolworths Australind,Cnr Grand Ent & The Promenade,AUSTRALIND,Harvey,Woolworths
-300,Caltex Woolworths Aveley,317 Millhouse Rd,AVELEY,North of River,Woolworths
-301,Caltex Woolworths Ballajura,5 Hamelin Dr,BALLAJURA,North of River,Woolworths
-302,Caltex Woolworths Brooks Garden,162 Chester Pass Rd,LANGE,Albany,Woolworths
-303,Caltex Woolworths Bunbury,Lot 68 Pennant Rd,EAST BUNBURY,Bunbury,Woolworths
-304,Caltex Woolworths Busselton,36 Duchess St,BUSSELTON,Busselton-Shire,Woolworths
-305,Caltex Woolworths Canning Vale,15 Sarah Cl,CANNING VALE,South of River,Woolworths
-306,Caltex Woolworths Cannington,25 Cecil Ave,CANNINGTON,South of River,Woolworths
-307,Caltex Woolworths Carnarvon,90 Robinson St,CARNARVON,Carnarvon,Woolworths
-308,Caltex Woolworths Currambine Marketplace,1244 Marmion Ave,CURRAMBINE,North of River,Woolworths
-309,Caltex Woolworths Dianella,372 Grand Prom,DIANELLA,North of River,Woolworths
-310,Caltex Woolworths Djugun,106 Frederick St,DJUGUN,Broome,Woolworths
-311,Caltex Woolworths Eaton,2 Recreation Dr,EATON,Dardanup,Woolworths
-312,Caltex Woolworths Ellenbrook,11 Main St,ELLENBROOK,North of River,Woolworths
-313,Caltex Woolworths Falcon,651 Old Coast Rd,FALCON,Mandurah,Woolworths
-314,Caltex Woolworths Floreat,5 Howtree Pl,FLOREAT,North of River,Woolworths
-315,Caltex Woolworths Forrestfield,78C Hale Rd,FORRESTFIELD,East/Hills,Woolworths
-316,Caltex Woolworths Geraldton,59 Cathedral Ave,GERALDTON,Geraldton,Woolworths
-317,Caltex Woolworths Greenwood,37 Canham Way,GREENWOOD,North of River,Woolworths
-318,Caltex Woolworths Joondalup Winton Road,189 Winton Rd,JOONDALUP,North of River,Woolworths
-319,Caltex Woolworths Kalgoorlie,104 Brookman St,KALGOORLIE,Kalgoorlie,Woolworths
-320,Caltex Woolworths Karratha,Lot 1437 Warambie Rd,KARRATHA,Karratha,Woolworths
-321,Caltex Woolworths Maddington Centro Shopping Centre,77 Attfield St,MADDINGTON,South of River,Woolworths
-322,Caltex Woolworths Maddington West,207 Burslem Dr,MADDINGTON,South of River,Woolworths
-323,Caltex Woolworths Mandurah,10-12 Magenta Tce,MANDURAH,Mandurah,Woolworths
-324,Caltex Woolworths Mandurah Forum,330 Pinjarra Rd,MANDURAH,Mandurah,Woolworths
-325,Caltex Woolworths Manjimup,89 Mottram St,MANJIMUP,Manjimup,Woolworths
-326,Caltex Woolworths Mirrabooka,53 Yirrigan Dr,MIRRABOOKA,North of River,Woolworths
-327,Caltex Woolworths Morley Galleria,60 Russell St,MORLEY,North of River,Woolworths
-328,Caltex Woolworths Northam,86 Wellington St,NORTHAM,Northam-Shire,Woolworths
-329,Caltex Woolworths Osborne Park,401 Scarborough Beach Rd,OSBORNE PARK,North of River,Woolworths
-330,Caltex Woolworths Port Hedland,150 Anderson St,PORT HEDLAND,Port Hedland,Woolworths
-331,Caltex Woolworths Port Kennedy,12 Saltaire Way,PORT KENNEDY,South of River,Woolworths
-332,Caltex Woolworths South Fremantle,219 Hampton Rd,SOUTH FREMANTLE,South of River,Woolworths
-333,Caltex Woolworths South Lake,752 North Lake Rd,SOUTH LAKE,South of River,Woolworths
-334,Caltex Woolworths Southern River,466 Warton Rd,SOUTHERN RIVER,South of River,Woolworths
-335,Caltex Woolworths Warnbro,202 Warnbro Sound Ave,WARNBRO,South of River,Woolworths
-336,Caltex Woolworths Whitfords,470 Whitfords Ave,HILLARYS,North of River,Woolworths
-337,Cape Agencies,20 Windsor Rd,WELLSTEAD,Albany,Ampol
-338,Castletown Service Station,57 Goldfields Rd,CASTLETOWN,Esperance,BP
-339,Coles Express Albany Orana,342 Albany Hwy,ORANA,Albany,Coles Express
-340,Colroy Country Kitchen,93 Capel Dr,CAPEL,Capel,Ampol
-341,Crudeli's Auto Repairs,24 Maitland Rd,MULLEWA,Geraldton,BP
-342,Del Park Roadhouse,4267 South Western Hwy,NORTH DANDALUP,Murray,Ampol
-343,Derby Fuels,46 Clarendon St,DERBY,Derby,Shell
-344,Dunning's Broome,7 Clementson St,BROOME,Broome,Shell
-345,Dunning's Carnarvon,125 Robinson St,MORGANTOWN,Carnarvon,Shell
-346,Dunning's Newman,21 Willis St,NEWMAN,Newman,Shell
-347,Dunning's Northam,38 Peel Tce,NORTHAM,Northam-Shire,Shell
-348,Dunning's Thompsons Garage,127 Giblett St,MANJIMUP,Manjimup,Shell
-349,Dwellingup BP,48 McLarty St,DWELLINGUP,Murray,BP
-350,EG Ampol Alkimos,11 Shorehaven Bvd,ALKIMOS,North of River,Ampol
-351,EG Ampol Australind,Cnr Grand Ent & The Promenade,AUSTRALIND,Harvey,Ampol
-352,EG Ampol Aveley,317 Millhouse Rd,AVELEY,North of River,Ampol
-353,EG Ampol Ballajura,5 Hamelin Dr,BALLAJURA,North of River,Ampol
-354,EG Ampol Banksia Grove,133 Ghost Gum Bvd,BANKSIA GROVE,North of River,Ampol
-355,EG Ampol Brabham,3 Marvel Ent,BRABHAM,East/Hills,Ampol
-356,EG Ampol Brooks Garden,162 Chester Pass Rd,LANGE,Albany,Ampol
-357,EG Ampol Bunbury,Lot 68 Pennant Rd,EAST BUNBURY,Bunbury,Ampol
-358,EG Ampol Busselton,36 Duchess St,BUSSELTON,Busselton-Shire,Ampol
-359,EG Ampol Canning Vale,15 Sarah Cl,CANNING VALE,South of River,Ampol
-360,EG Ampol Cannington,25 Cecil Ave,CANNINGTON,South of River,Ampol
-361,EG Ampol Carnarvon,90 Robinson St,CARNARVON,Carnarvon,Ampol
-362,EG Ampol Currambine Marketplace,1244 Marmion Ave,CURRAMBINE,North of River,Ampol
-363,EG Ampol Dianella,372 Grand Prom,DIANELLA,North of River,Ampol
-364,EG Ampol Djugun,106 Frederick St,DJUGUN,Broome,Ampol
-365,EG Ampol Eaton,2 Recreation Dr,EATON,Dardanup,Ampol
-366,EG Ampol Ellenbrook,11 Main St,ELLENBROOK,North of River,Ampol
-367,EG Ampol Falcon,651 Old Coast Rd,FALCON,Mandurah,Ampol
-368,EG Ampol Floreat,5 Howtree Pl,FLOREAT,North of River,Ampol
-369,EG Ampol Forrestfield,78C Hale Rd,FORRESTFIELD,East/Hills,Ampol
-370,EG Ampol Geraldton,59 Cathedral Ave,GERALDTON,Geraldton,Ampol
-371,EG Ampol Greenwood,37 Canham Way,GREENWOOD,North of River,Ampol
-372,EG Ampol Joondalup Winton Road,189 Winton Rd,JOONDALUP,North of River,Ampol
-373,EG Ampol Kalgoorlie,104 Brookman St,KALGOORLIE,Kalgoorlie,Ampol
-374,EG Ampol Karratha,Lot 1437 Warambie Rd,KARRATHA,Karratha,Ampol
-375,EG Ampol Maddington Centro Shopping Centre,77 Attfield St,MADDINGTON,South of River,Ampol
-376,EG Ampol Maddington West,207 Burslem Dr,MADDINGTON,South of River,Ampol
-377,EG Ampol Mandurah,10-12 Magenta Tce,MANDURAH,Mandurah,Ampol
-378,EG Ampol Mandurah Forum,330 Pinjarra Rd,MANDURAH,Mandurah,Ampol
-379,EG Ampol Manjimup,89 Mottram St,MANJIMUP,Manjimup,Ampol
-380,EG Ampol Mirrabooka,53 Yirrigan Dr,MIRRABOOKA,North of River,Ampol
-381,EG Ampol Morley Galleria,60 Russell St,MORLEY,North of River,Ampol
-382,EG Ampol Northam,86 Wellington St,NORTHAM,Northam-Shire,Ampol
-383,EG Ampol Osborne Park,401 Scarborough Beach Rd,OSBORNE PARK,North of River,Ampol
-384,EG Ampol Port Kennedy,12 Saltaire Way,PORT KENNEDY,South of River,Ampol
-385,EG Ampol South Fremantle,219 Hampton Rd,SOUTH FREMANTLE,South of River,Ampol
-386,EG Ampol South Lake,752 North Lake Rd,SOUTH LAKE,South of River,Ampol
-387,EG Ampol Southern River,466 Warton Rd,SOUTHERN RIVER,South of River,Ampol
-388,EG Ampol Warnbro,202 Warnbro Sound Ave,WARNBRO,South of River,Ampol
-389,EG Ampol Whitfords,470 Whitfords Ave,HILLARYS,North of River,Ampol
-390,Elleker General Store,1309 Lower Denmark Rd,ELLEKER,Albany,Puma
-391,GD's Brunswick Roadhouse,94 Ommaney Rd,BRUNSWICK,Harvey,Ampol
-392,GSG WA Pty Ltd,111 Morgans St,RAVENSTHORPE,Ravensthorpe,Shell
-393,Geographe Petroleum,84 Strelly St,BUSSELTON,Busselton-Shire,Ampol
-394,Geographe Petroleum Margaret River,12 Auger Way,MARGARET RIVER,Augusta-M River,Ampol
-395,Harbour Rd Truckstop,213 Harbour Rd,CHADWICK,Esperance,BP
-396,Herne Hill General Store,777 Great Northern Hwy,HERNE HILL,East/Hills,Puma
-397,Hi-Way Sales & Service 1982,154 Albany Hwy,KOJONUP,Kojonup,Ampol
-398,Hillview Roadhouse and Motel,47 Albany Hwy,KOJONUP,Kojonup,Shell
-399,Jurien Bay Service Station & Roadhouse,22 Bashford St,JURIEN BAY,Jurien,Ampol
-400,Karnup Roadhouse,2263 Mandurah Rd,KARNUP,South of River,BP
-401,Karridale Crossroads General Store,12425 Bussell Hwy,KARRIDALE,Augusta-M River,Ampol
-402,Little Grove General Store,639 Frenchmans Bay Rd,LITTLE GROVE,Albany,Shell
-403,Manypeaks Store,43738 South Coast Hwy,MANYPEAKS,Albany,BP
-404,Meekatharra Corner Store,16 Main St,MEEKATHARRA,Meekatharra,BP
-405,Metro Albany,269 York St,ALBANY,Albany,Metro
-406,Metro Bassendean,335 Collier Rd,BASSENDEAN,North of River,Metro
-407,Metro Canning Vale,Lot 322 Ranford Rd,CANNING VALE,South of River,Metro
-408,Metro Geraldton,1 Fortyn Ct,MAHOMETS FLATS,Geraldton,Metro
-409,Metro Jurien Bay,74 Bashford St,JURIEN BAY,Jurien,Metro
-410,Metro Malaga,1 Harlond Ave,MALAGA,North of River,Metro
-411,Metro Wangara,79 Gnangara Rd,WANGARA,North of River,Metro
-412,Metro Wanneroo,994 Wanneroo Rd,WANNEROO,North of River,Metro
-413,Moonyoonooka Store,753 Geraldton-Mt Magnet Rd,MOONYOONOOKA,Geraldton,Ampol
-414,Ngiyali Roadhouse,Lot 315 Great Northern Hwy,FITZROY CROSSING,Fitzroy Cross,BP
-415,NightOwl BP Armadale,3249 Albany Hwy,ARMADALE,South of River,BP
-416,NightOwl BP Mandurah,304 Pinjarra Rd,MANDURAH,Mandurah,BP
-417,NightOwl Shell Bellevue,49 Great Eastern Hwy,BELLEVUE,East/Hills,Shell
-418,NightOwl Shell Highgate,3 Guildford Rd,MOUNT LAWLEY,North of River,Shell
-419,NightOwl Shell Kalamunda,7 Mead St,KALAMUNDA,East/Hills,Shell
-420,NightOwl Shell Maddington,1 Davison St,MADDINGTON,South of River,Shell
-421,NightOwl Shell Ravenswood,6 Beacham Rd,RAVENSWOOD,Murray,Shell
-422,NightOwl Shell Redcliffe,443 Great Eastern Hwy,REDCLIFFE,South of River,Shell
-423,OTR Bunbury,92 Blair St,BUNBURY,Bunbury,Shell
-424,OTR Como,73 Manning Rd,COMO,South of River,BP
-425,OTR Como,73 Manning Rd,COMO,South of River,Shell
-426,OTR Maddington,1-3 Sampson St,MADDINGTON,South of River,Shell
-427,OTR Perth Pier Street,17 Brisbane St,PERTH,North of River,Shell
-428,Petro Fuels Cataby,10513 Brand Hwy,CATABY,Cataby,Ampol
-429,Petro Fuels Denmark,69 South Coast Hwy,DENMARK,Denmark,Shell
-430,Petro Fuels Karragullen,1287 Brookton Hwy,KARRAGULLEN,East/Hills,BP
-431,Petro Fuels Mount Barker,25 Mitchell Rd,MOUNT BARKER,Mt Barker,BP
-432,Puma Alexander Heights,200 Mirrabooka Ave,ALEXANDER HEIGHTS,North of River,Puma
-433,Puma Armadale Central,10 Orchard Ave,ARMADALE,South of River,Puma
-434,Puma Balcatta,229 Balcatta Rd,BALCATTA,North of River,Puma
-435,Puma Baldivis,67 Ridge Bvd,BALDIVIS,South of River,Puma
-436,Puma Bayswater,502 Guildford Rd,BAYSWATER,North of River,Puma
-437,Puma Bedfordale,681 Albany Hwy,BEDFORDALE,East/Hills,Puma
-438,Puma Bellevue,16-20 Clayton St,BELLEVUE,East/Hills,Puma
-439,Puma Belmont,33 Belvidere St,BELMONT,South of River,Puma
-440,Puma Binningup,7080 Forrest Hwy,BINNINGUP,Harvey,Puma
-441,Puma Bunbury South,1 Brittain Rd,CAREY PARK,Bunbury,Puma
-442,Puma Burswood,265 Great Eastern Hwy,BURSWOOD,South of River,Puma
-443,Puma Busselton,99 Causeway Rd,BUSSELTON,Busselton-Shire,Puma
-444,Puma Byford,8 Kardan Bvd,BYFORD,South of River,Puma
-445,Puma Castletown,49 Norseman Rd,CASTLETOWN,Esperance,Puma
-446,Puma Como,393 Canning Hwy,COMO,South of River,Puma
-447,Puma Dalwallinu,4 Johnston St,DALWALLINU,Dalwallinu,Puma
-448,Puma Dayton,8 Repton St,DAYTON,North of River,Puma
-449,Puma Dianella,63 Walter Rd West,DIANELLA,North of River,Puma
-450,Puma Esperance OPT,Lot 6 Beckwith Rd,CHADWICK,Esperance,Puma
-451,Puma Glen Forrest,1400 Great Eastern Hwy,GLEN FORREST,East/Hills,Puma
-452,Puma Glenfield,1182 Chapman Rd,GLENFIELD,Geraldton,Puma
-453,Puma Guildford,22 Johnson St,GUILDFORD,South of River,Puma
-454,Puma Gwelup,1 Wishart St,GWELUP,North of River,Puma
-455,Puma Hamilton Hill,224 Clontarf Rd,HAMILTON HILL,South of River,Puma
-456,Puma Hamilton Hill South,216 Rockingham Rd,HAMILTON HILL,South of River,Puma
-457,Puma Harvey,77 Uduc Rd,HARVEY,Harvey,Puma
-458,Puma Henderson OPT,81 Quill Way,HENDERSON,South of River,Puma
-459,Puma High Wycombe,494 Kalamunda Rd,HIGH WYCOMBE,East/Hills,Puma
-460,Puma Joondalup,49 Candlewood Bvd,JOONDALUP,North of River,Puma
-461,Puma Kalamunda,26 Kalamunda Rd,KALAMUNDA,East/Hills,Puma
-462,Puma Kalgoorlie,77 Egan St,KALGOORLIE,Kalgoorlie,Puma
-463,Puma Karragullen Motors,164 Brookton Hwy,KARRAGULLEN,East/Hills,Puma
-464,Puma Kiara,157 Morley Dr,KIARA,North of River,Puma
-465,Puma Kununurra,32 Bandicoot Dr,KUNUNURRA,Kununurra,Puma
-466,Puma Kununurra Depot,2257 Victoria Hwy,KUNUNURRA,Kununurra,Puma
-467,Puma Landsdale,220 Gnangara Rd,LANDSDALE,North of River,Puma
-468,Puma Lesmurdie,194 Canning Rd,LESMURDIE,East/Hills,Puma
-469,Puma Lynwood,2 Lynwood Ave,LYNWOOD,South of River,Puma
-470,Puma Maddington,137 Kelvin Rd,MADDINGTON,South of River,Puma
-471,Puma Madeley,182 Wanneroo Rd,MADELEY,North of River,Puma
-472,Puma Malaga,1896 Beach Rd,MALAGA,North of River,Puma
-473,Puma Mandurah,715 Pinjarra Rd,BARRAGUP,Murray,Puma
-474,Puma Manjimup Roadhouse,1182 South Western Hwy,MANJIMUP,Manjimup,Puma
-475,Puma Meadow Springs,25 Meadow Springs Dr,MEADOW SPRINGS,Mandurah,Puma
-476,Puma Merriwa,4 Hughie Edwards Dr,MERRIWA,North of River,Puma
-477,Puma Midvale,232 Morrison Rd,MIDVALE,East/Hills,Puma
-478,Puma Mindarie,22 Anchorage Dr,MINDARIE,North of River,Puma
-479,Puma Mount Lawley,81 Guildford Rd,MOUNT LAWLEY,North of River,Puma
-480,Puma Mt Melville,317 Albany Hwy,MOUNT MELVILLE,Albany,Puma
-481,Puma Mundaring,7060 Great Eastern Hwy,MUNDARING,East/Hills,Puma
-482,Puma Munster,512 Rockingham Rd,MUNSTER,South of River,Puma
-483,Puma Murdoch,170 Murdoch Dr,MURDOCH,South of River,Puma
-484,Puma Myalup,6043 Forrest Hwy,MYALUP,Harvey,Puma
-485,Puma Neerabup,2056 Wanneroo Rd,NEERABUP,North of River,Puma
-486,Puma North Perth,311 Fitzgerald St,WEST PERTH,North of River,Puma
-487,Puma Ord River Roadhouse,5 Messmate Way,KUNUNURRA,Kununurra,Puma
-488,Puma Osborne Park,8 Main St,OSBORNE PARK,North of River,Puma
-489,Puma Parmelia,60 Meares Ave,KWINANA TOWN CENTRE,South of River,Puma
-490,Puma Pearsall,204 Shiraz Bvd,PEARSALL,North of River,Puma
-491,Puma Piccadilly,7 Maritana St,PICCADILLY,Kalgoorlie,Puma
-492,Puma Ranford,4 Remisko Dr,FORRESTDALE,South of River,Puma
-493,Puma Sawyers Valley,96 Great Eastern Hwy,SAWYERS VALLEY,East/Hills,Puma
-494,Puma South Hedland,1 Altitude Ave,PORT HEDLAND,Port Hedland,Puma
-495,Puma Stratham Downs Roadhouse,1540 Bussell Hwy,STRATHAM,Capel,Puma
-496,Puma Tammin Roadhouse,15323 Great Eastern Hwy,TAMMIN,Tammin,Puma
-497,Puma Tarcoola,156 Brand Hwy,TARCOOLA BEACH,Geraldton,Puma
-498,Puma Upper Swan,1383 Great Northern Hwy,UPPER SWAN,East/Hills,Puma
-499,Puma Victoria Park,162-170 Albany Hwy,VICTORIA PARK,South of River,Puma
-500,Puma Wangara,1 Brady St,WANGARA,North of River,Puma
-501,Puma Wanneroo,951 Wanneroo Rd,WANNEROO,North of River,Puma
-502,Puma Warnbro,649-651 Safety Bay Rd,WARNBRO,South of River,Puma
-503,Puma Wattle Grove,604 Welshpool Rd East,WATTLE GROVE,East/Hills,Puma
-504,Puma Welshpool,23 Kewdale Rd,WELSHPOOL,South of River,Puma
-505,Puma Wooroloo,3381 Great Eastern Hwy,WUNDOWIE,Northam-Shire,Puma
-506,Puma Yanchep,1 Ikara Lane,YANCHEP,North of River,Puma
-507,Puma Yokine,398 Hector St,YOKINE,North of River,Puma
-508,Refuel Australia - Cataby,10513 Brand Hwy,CATABY,Cataby,Ampol
-509,Refuel Australia - DMW Supplies,39 Moreton Tce,DONGARA,Dongara,Ampol
-510,Refuel Australia - Dalwallinu,2 Clinch Rd,DALWALLINU,Dalwallinu,Ampol
-511,Refuel Australia - Geraldton Flores Road,120 Flores Rd,WEBBERTON,Geraldton,Ampol
-512,Refuel Australia - Geraldton Willcock Drive,Cnr John Willcock Link & Portway,WEST END,Geraldton,Ampol
-513,Refuel Australia - Port Hedland,Lot 3 Great Northern Hwy,PORT HEDLAND,Port Hedland,Ampol
-514,Refuel Australia - Sunset Geraldton,620 Chapman Rd,GLENFIELD,Geraldton,Ampol
-515,Route 94 Bakers Hill,4641 Great Eastern Hwy,BAKERS HILL,Northam-Shire,United
-516,S24 Bull Creek,83 Wheatley Dr,BULL CREEK,South of River,Shell
-517,S24 Crystal Brook (Lesmurdie),7 Welshpool Rd East,LESMURDIE,East/Hills,Shell
-518,S24 Forrestfield,155 Hale Rd,FORRESTFIELD,East/Hills,Shell
-519,S24 Kununurra,5 Messmate Way,KUNUNURRA,Kununurra,Puma
-520,S24 Redcliffe,419 Great Eastern Hwy,REDCLIFFE,South of River,Shell
-521,Shell Alkimos,12 Longstaff Ave,ALKIMOS,North of River,Shell
-522,Shell Bullsbrook,2539 Great Northern Hwy,BULLSBROOK,East/Hills,Shell
-523,Shell Coles Express Armadale,269 South Western Hwy,ARMADALE,South of River,Coles Express
-524,Shell Coles Express Banksia Grove,1001 Joondalup Dr,BANKSIA GROVE,North of River,Coles Express
-525,Shell Coles Express Bayswater,34 Jackson St,BAYSWATER,North of River,Coles Express
-526,Shell Coles Express Beeliar,8 Durnin Ave,BEELIAR,South of River,Coles Express
-527,Shell Coles Express Bentley,1128 Albany Hwy,BENTLEY,South of River,Coles Express
-528,Shell Coles Express Bibra Lake,1 Timberyard Way,BIBRA LAKE,South of River,Coles Express
-529,Shell Coles Express Bicton,394 Canning Hwy,BICTON,South of River,Coles Express
-530,Shell Coles Express Boulder,35 Frank St,BOULDER,Boulder,Coles Express
-531,Shell Coles Express Brentwood,71 Cranford Ave,BRENTWOOD,South of River,Coles Express
-532,Shell Coles Express Brookdale,1256 Armadale Rd,ARMADALE,South of River,Coles Express
-533,Shell Coles Express Broome,19 Napier Tce,BROOME,Broome,Coles Express
-534,Shell Coles Express Bull Creek,44 Benningfield Rd,BULL CREEK,South of River,Coles Express
-535,Shell Coles Express Bunbury,70 Forrest Ave,SOUTH BUNBURY,Bunbury,Coles Express
-536,Shell Coles Express Bunbury Gateway,9805 Forrest Hwy,GLEN IRIS,Bunbury,Coles Express
-537,Shell Coles Express Bunbury Outbound,9850 Forrest Hwy,VITTORIA,Bunbury,Coles Express
-538,Shell Coles Express Busselton,88 Causeway Rd,BUSSELTON,Busselton-Shire,Coles Express
-539,Shell Coles Express Butler,61 Butler Bvd,BUTLER,North of River,Coles Express
-540,Shell Coles Express Canning Vale,280 Bannister Rd,CANNING VALE,South of River,Coles Express
-541,Shell Coles Express Casuarina (WA),1 Johnson Rd,BERTRAM,South of River,Coles Express
-542,Shell Coles Express Claremont,269 Stirling Hwy,CLAREMONT,North of River,Coles Express
-543,Shell Coles Express Clarkson,36 Ocean Keys Bvd,CLARKSON,North of River,Coles Express
-544,Shell Coles Express Cloverdale,223 Belmont Ave,CLOVERDALE,South of River,Coles Express
-545,Shell Coles Express Collie,57 Johnston St,COLLIE,Collie,Coles Express
-546,Shell Coles Express Dampier,47 Church Rd,DAMPIER,Dampier,Coles Express
-547,Shell Coles Express Dianella,67 Walter Rd West,DIANELLA,North of River,Coles Express
-548,Shell Coles Express Duncraig,193 Warwick Rd,DUNCRAIG,North of River,Coles Express
-549,Shell Coles Express Dunsborough,64 Dunn Bay Rd,DUNSBOROUGH,Busselton-Shire,Coles Express
-550,Shell Coles Express Edgewater,57 Joondalup Dr,EDGEWATER,North of River,Coles Express
-551,Shell Coles Express Ellenbrook,3 Goodwood Cres,ELLENBROOK,North of River,Coles Express
-552,Shell Coles Express Esperance,25 Andrew St,ESPERANCE,Esperance,Coles Express
-553,Shell Coles Express Fitzroy Crossing Roadhouse,87 Great Northern Hwy,FITZROY CROSSING,Fitzroy Cross,Coles Express
-554,Shell Coles Express Forrestfield,2 Strelitzia Ave,FORRESTFIELD,East/Hills,Coles Express
-555,Shell Coles Express Fremantle,101 Hampton Rd,FREMANTLE,South of River,Coles Express
-556,Shell Coles Express Girrawheen,60 Marangaroo Dr,GIRRAWHEEN,North of River,Coles Express
-557,Shell Coles Express Halls Head,14 Guava Way,HALLS HEAD,Mandurah,Coles Express
-558,Shell Coles Express Jolimont,6 Jersey St,JOLIMONT,North of River,Coles Express
-559,Shell Coles Express Karawara,222 Manning Rd,KARAWARA,South of River,Coles Express
-560,Shell Coles Express Karratha,13 Searipple Rd,KARRATHA,Karratha,Coles Express
-561,Shell Coles Express Karratha Travel & Truck,6 Madigan Rd,STOVE HILL,Karratha,Coles Express
-562,Shell Coles Express Kewdale,518 Abernethy Rd,KEWDALE,South of River,Coles Express
-563,Shell Coles Express Kingsley,47 Renegade Way,KINGSLEY,North of River,Coles Express
-564,Shell Coles Express Kununurra Roadhouse,17 Poinciana St,KUNUNURRA,Kununurra,Coles Express
-565,Shell Coles Express Kwinana Beach,4 Beach St,KWINANA BEACH,South of River,Coles Express
-566,Shell Coles Express Lakelands,49 Banksiadale Gte,LAKELANDS,Mandurah,Coles Express
-567,Shell Coles Express Langford,70 Nicholson Rd,LANGFORD,South of River,Coles Express
-568,Shell Coles Express Leeming,51 Farrington St,LEEMING,South of River,Coles Express
-569,Shell Coles Express Maddington,117 Burslem Dr,MADDINGTON,South of River,Coles Express
-570,Shell Coles Express Malaga,492 Alexander Dr,MALAGA,North of River,Coles Express
-571,Shell Coles Express Mandurah,Cnr Pinjarra Rd & Watson Dr,BARRAGUP,Murray,Coles Express
-572,Shell Coles Express Margaret River,77 Bussell Hwy,MARGARET RIVER,Augusta-M River,Coles Express
-573,Shell Coles Express Meekatharra Roadhouse,Lot 821 Main St,MEEKATHARRA,Meekatharra,Coles Express
-574,Shell Coles Express Middle Swan,Lot 46 Great Northern Hwy,MIDDLE SWAN,East/Hills,Coles Express
-575,Shell Coles Express Mosman Park,582 Stirling Hwy,MOSMAN PARK,North of River,Coles Express
-576,Shell Coles Express Mount Lawley,253 Walcott St,NORTH PERTH,North of River,Coles Express
-577,Shell Coles Express Mount Pleasant,1 The Esplanade,MOUNT PLEASANT,South of River,Coles Express
-578,Shell Coles Express Myaree,69 North Lake Rd,MYAREE,South of River,Coles Express
-579,Shell Coles Express Northam,10 Beamish Ave,NORTHAM,Northam-Shire,Coles Express
-580,Shell Coles Express Ocean Reef,6 Marina Bvd,OCEAN REEF,North of River,Coles Express
-581,Shell Coles Express Osborne Park,11 Roberts St West,OSBORNE PARK,North of River,Coles Express
-582,Shell Coles Express Palmyra,80 Carrington St,PALMYRA,South of River,Coles Express
-583,Shell Coles Express Perth,480 William St,PERTH,North of River,Coles Express
-584,Shell Coles Express Port Hedland,Lot 2065 Wilson St,PORT HEDLAND,Port Hedland,Coles Express
-585,Shell Coles Express Scarborough,205 West Coast Hwy,SCARBOROUGH,North of River,Coles Express
-586,Shell Coles Express Singleton,492 Mandurah Rd,SINGLETON,South of River,Coles Express
-587,Shell Coles Express South Hedland Roadhouse,Lot 5553 Great Northern Hwy,WEDGEFIELD,Port Hedland,Coles Express
-588,Shell Coles Express South Perth,3 Canning Hwy,SOUTH PERTH,South of River,Coles Express
-589,Shell Coles Express Southern River,216 Lakey St,SOUTHERN RIVER,South of River,Coles Express
-590,Shell Coles Express Tarcoola,2 Fortyn Ct,MAHOMETS FLATS,Geraldton,Coles Express
-591,Shell Coles Express Upper Swan Roadhouse,1333 Great Northern Hwy,UPPER SWAN,East/Hills,Coles Express
-592,Shell Coles Express Vasse,2 Napoleon Prom,VASSE,Busselton-Shire,Coles Express
-593,Shell Coles Express Victoria Park,66 Kent St,EAST VICTORIA PARK,South of River,Coles Express
-594,Shell Coles Express Waikiki,1-9 Gnangara Dr,WAIKIKI,South of River,Coles Express
-595,Shell Coles Express Wangara,1 Niche Pde,WANGARA,North of River,Coles Express
-596,Shell Coles Express Wanneroo Pearsall,621 Wanneroo Rd,WANNEROO,North of River,Coles Express
-597,Shell Coles Express Warwick (WA),274 Erindale Rd,WARWICK,North of River,Coles Express
-598,Shell Coles Express Wembley,337 Cambridge St,WEMBLEY,North of River,Coles Express
-599,Shell Coles Express West Perth,30 Thomas St,WEST PERTH,North of River,Coles Express
-600,Shell Coles Express Westfield,88 Champion Dr,SEVILLE GROVE,South of River,Coles Express
-601,Shell Coles Express Willetton,239-247 High Rd,WILLETTON,South of River,Coles Express
-602,Shell Coles Express Wonthella,115 North West Coastal Hwy,WONTHELLA,Geraldton,Coles Express
-603,Shell Denmark,69 South Coast Hwy,DENMARK,Denmark,Shell
-604,Shell Fresh Trading Co Ascot,472 Great Eastern Hwy,ASCOT,South of River,Shell
-605,Shell Fresh Trading Co Welshpool,36 Welshpool Rd,WELSHPOOL,South of River,Shell
-606,Shell Gidgegannup,2095 Toodyay Rd,GIDGEGANNUP,East/Hills,Shell
-607,Shell High Wycombe,1100 Abernethy Rd,HIGH WYCOMBE,East/Hills,Shell
-608,Shell Jarrahdale,2 Jarrahdale Rd,JARRAHDALE,South of River,Shell
-609,Shell Lower King Liquor & General,629 Lower King Rd,LOWER KING,Albany,Shell
-610,Shell Narrogin,44 Egerton St,NARROGIN,Narrogin,Shell
-611,Shell Williams,24 Albany Hwy,WILLIAMS,Williams,Shell
-612,Shinju BP,101 Guy St,BROOME,Broome,BP
-613,Smart Mart Newman,Lot 1 Newman Dr,NEWMAN,Newman,Shell
-614,Smart Mart Pure Convenience - Flores Rd,280 Fourth St,WONTHELLA,Geraldton,BP
-615,Smiths Shell Service,86 Avon Tce,YORK,York,Shell
-616,Tomeo's Service Station,1287 Brookton Hwy,KARRAGULLEN,East/Hills,BP
-617,United Albany Central,309 Albany Hwy,MOUNT MELVILLE,Albany,United
-618,United Anketell,5 Albina Ave,ANKETELL,South of River,United
-619,United Anketell South,805 Thomas Rd,ANKETELL,South of River,United
-620,United Armadale,178 South Western Hwy,ARMADALE,South of River,United
-621,United Bassendean,335 Collier Rd,BASSENDEAN,North of River,United
-622,United Bibra Lake,13 Whyalla Ct,BIBRA LAKE,South of River,United
-623,United Boulder Kalgoorlie,26 Davis St,BOULDER,Boulder,United
-624,United Broome,49 Reid Rd,CABLE BEACH,Broome,United
-625,United Byford,801-803 South Western Hwy,BYFORD,South of River,United
-626,United Denmark,45 South Coast Hwy,DENMARK,Denmark,United
-627,United East Victoria Park,916 Albany Hwy,EAST VICTORIA PARK,South of River,United
-628,United Ellenbrook,3 Locke Lane,ELLENBROOK,North of River,United
-629,United Hamilton Hill,9 Winterfold Rd,HAMILTON HILL,South of River,United
-630,United Hepburn Heights,4 Walter Padbury Bvd,PADBURY,North of River,United
-631,United Kellerberrin Truck Stop,150 Massingham St,KELLERBERRIN,Kellerberrin,United
-632,United Kewdale Truck Stop,410-412 Orrong Rd,KEWDALE,South of River,United
-633,United Kojonup,138 Albany Hwy,KOJONUP,Kojonup,United
-634,United Leda,2 Feilman Dr,LEDA,South of River,United
-635,United Lexia Truck Stop,779 Gnangara Rd,LEXIA,North of River,United
-636,United Maddington Truck Stop,13 Stebbing Rd,MADDINGTON,South of River,United
-637,United Manjimup,1 Rose St,MANJIMUP,Manjimup,United
-638,United Mount Barker Roadhouse Truck Stop,31763 Albany Hwy,MOUNT BARKER,Mt Barker,United
-639,United Mt Lawley,791 Beaufort St,MOUNT LAWLEY,North of River,United
-640,United Myaree,182 Leach Hwy,MYAREE,South of River,United
-641,United Naval Base Truck Stop,13 Lionel St,NAVAL BASE,South of River,United
-642,United Neerabup Truck Stop,2038 Wanneroo Rd,NEERABUP,North of River,United
-643,United Northbridge,31 Fitzgerald St,NORTHBRIDGE,North of River,United
-644,United Osborne Park,479 Scarborough Beach Rd,OSBORNE PARK,North of River,United
-645,United Perth Airport Truck Stop,8 Paltridge Rd,PERTH AIRPORT,South of River,United
-646,United Pinjarra Truck Stop,1602 Pinjarra Rd,PINJARRA,Murray,United
-647,United Quinns Rocks,121 Quinns Rd,QUINNS ROCKS,North of River,United
-648,United Rangeway Truck Stop,50 Rifle Range Rd,RANGEWAY,Geraldton,United
-649,United Roleystone,11 Wygonda Rd,ROLEYSTONE,East/Hills,United
-650,United South Lake,49 Berrigan Dr,SOUTH LAKE,South of River,United
-651,United Southern River,Lot 101 Terrier Pl,SOUTHERN RIVER,South of River,United
-652,United Swanbourne,2 Servetus St,SWANBOURNE,North of River,United
-653,United Tapping,1369 Wanneroo Rd,WANNEROO,North of River,United
-654,United Vasse Truck Stop,210 Northerly St,VASSE,Busselton-Shire,United
-655,Walpole IGA Pioneer Store,10 Nockolds St,WALPOLE,Manjimup,Ampol
-656,Waroona Roadhouse,32 South Western Hwy,WAROONA,Waroona,Puma
-657,Whalley's United Beachway,260 Middleton Rd,MIRA MAR,Albany,United
-658,Whalley's United Uberwash,225-227 Albany Hwy,MOUNT MELVILLE,Albany,United
-659,X Convenience Alkimos,58 Montana Cres,ALKIMOS,North of River,Puma
-660,Youngs Siding General Store,19 Station St,YOUNGS SIDING,Albany,BP
+location_key,station_name,address,suburb,region
+1,53 Mile Roadhouse,31 South Western Hwy,PINJARRA,Murray
+2,7-Eleven Alkimos,10 Carlsbad Prom,ALKIMOS,North of River
+3,7-Eleven Ascot,194 Great Eastern Hwy,ASCOT,South of River
+4,7-Eleven Balcatta,174 Balcatta Rd,BALCATTA,North of River
+5,7-Eleven Baldivis,370 Baldivis Rd,BALDIVIS,South of River
+6,7-Eleven Balga,102 Princess Rd,BALGA,North of River
+7,7-Eleven Banksia Grove,1/300 Joseph Banks Bvd,BANKSIA GROVE,North of River
+8,7-Eleven Bassendean,302-318 Collier Rd,BASSENDEAN,North of River
+9,7-Eleven Bentley,1133-1135 Albany Hwy,BENTLEY,South of River
+10,7-Eleven Bibra Lake,35 Port Kembla Dr,BIBRA LAKE,South of River
+11,7-Eleven Booragoon,492 Marmion St,BOORAGOON,South of River
+12,7-Eleven Brabham,3 Marvel Ent,BRABHAM,East/Hills
+13,7-Eleven Bunbury East,8D Picton Rd,EAST BUNBURY,Bunbury
+14,7-Eleven Busselton,81-93 West St,BUSSELTON,Busselton-Shire
+15,7-Eleven Butler,270 Butler Bvd,BUTLER,North of River
+16,7-Eleven Byford South,25 Abernethy Rd,BYFORD,South of River
+17,7-Eleven Canning Vale,Lot 322 Ranford Rd,CANNING VALE,South of River
+18,7-Eleven Carlisle,232 Orrong Rd,CARLISLE,South of River
+19,7-Eleven Caversham,2131 West Swan Rd,CAVERSHAM,North of River
+20,7-Eleven Clarkson,19 Neerabup Dr,CLARKSON,North of River
+21,7-Eleven Cockburn Central,814 North Lake Rd,COCKBURN CENTRAL,South of River
+22,7-Eleven Dalyellup,51 Tiffany Ctr,DALYELLUP,Capel
+23,7-Eleven Dunsborough,100 Commonage Rd,DUNSBOROUGH,Busselton-Shire
+24,7-Eleven Eaton,15 Albatross Cres,EATON,Dardanup
+25,7-Eleven Forrestdale,2 Haydock St,FORRESTDALE,South of River
+26,7-Eleven Golden Bay,52 Thundelarra Dr,GOLDEN BAY,South of River
+27,7-Eleven Gosnells,303 Corfield St,GOSNELLS,South of River
+28,7-Eleven Greenfields,1 Eaglemont St,GREENFIELDS,Mandurah
+29,7-Eleven Greenfields South,13 Lakes Rd,GREENFIELDS,Mandurah
+30,7-Eleven Harrisdale,120 Yellowwood Ave,HARRISDALE,South of River
+31,7-Eleven Haynes,1256 Armadale Rd,ARMADALE,South of River
+32,7-Eleven Joondalup,8 Buick Way,JOONDALUP,North of River
+33,7-Eleven Kardinya,1 South St,KARDINYA,South of River
+34,7-Eleven Kelmscott,105 Champion Dr,KELMSCOTT,South of River
+35,7-Eleven Kelmscott Central,4 Church St,KELMSCOTT,South of River
+36,7-Eleven Landsdale,8 Mullingar Way,LANDSDALE,North of River
+37,7-Eleven Maddington South,1969 Albany Hwy,MADDINGTON,South of River
+38,7-Eleven Malaga,650 Marshall Rd,MALAGA,North of River
+39,7-Eleven Malvern Springs,324 The Broadway,ELLENBROOK,North of River
+40,7-Eleven Mandurah,296 Pinjarra Rd,MANDURAH,Mandurah
+41,7-Eleven Middle Swan,40-42 Great Northern Hwy,MIDDLE SWAN,East/Hills
+42,7-Eleven Midland,8 Clayton St,MIDLAND,East/Hills
+43,7-Eleven Midvale,83 Farrall Rd,MIDVALE,East/Hills
+44,7-Eleven Morley,162 Russell St,MORLEY,North of River
+45,7-Eleven Queens Park,235 Welshpool Rd,QUEENS PARK,South of River
+46,7-Eleven Ridgewood,35 Kilrush Turn,RIDGEWOOD,North of River
+47,7-Eleven Rockingham,129 Dixon Rd,EAST ROCKINGHAM,South of River
+48,7-Eleven Rockingham Central,2 Sepia Ct,ROCKINGHAM,South of River
+49,7-Eleven Southern River,481 Balfour St,SOUTHERN RIVER,South of River
+50,7-Eleven Stirling,377 Wanneroo Rd,BALCATTA,North of River
+51,7-Eleven Success,660 Beeliar Dr,SUCCESS,South of River
+52,7-Eleven Thornlie,125 Murdoch Rd,THORNLIE,South of River
+53,7-Eleven Treendale,147-149 Grand Ent,AUSTRALIND,Harvey
+54,7-Eleven Wangara,79 Gnangara Rd,WANGARA,North of River
+55,7-Eleven Wanneroo,990 Wanneroo Rd,WANNEROO,North of River
+56,7-Eleven Wanneroo South,929-931 Wanneroo Rd,WANNEROO,North of River
+57,7-Eleven Wattle Grove,332 Hale Rd,WATTLE GROVE,East/Hills
+58,7-Eleven Withers,1 Island Queen St,WITHERS,Bunbury
+59,7-Eleven Yanchep,2 Tamala Lane,YANCHEP,North of River
+60,Ampol Albany Diesel Stop,634 Menang Dr,WILLYUNG,Albany
+61,Ampol Bibra Lake Diesel Stop,5 Cocos Dr,BIBRA LAKE,South of River
+62,Ampol Bridgetown Diesel Stop,1 Spencer St,BRIDGETOWN,B-Town/G-Bushes
+63,Ampol Collie,124 Throssell St,COLLIE,Collie
+64,Ampol Foodary Albany York St,269 York St,ALBANY,Albany
+65,Ampol Foodary Altone Road,159 Altone Rd,BEECHBORO,North of River
+66,Ampol Foodary Applecross,918 Canning Hwy,APPLECROSS,South of River
+67,Ampol Foodary Ascot,204 Great Eastern Hwy,ASCOT,South of River
+68,Ampol Foodary Ashby,2 Hollosy Way,ASHBY,North of River
+69,Ampol Foodary Baldivis,614 Baldivis Rd,BALDIVIS,South of River
+70,Ampol Foodary Bannister Road,60 Bannister Rd,CANNING VALE,South of River
+71,Ampol Foodary Belmont,303 Great Eastern Hwy,BELMONT,South of River
+72,Ampol Foodary Bentley,91-93 Manning Rd,BENTLEY,South of River
+73,Ampol Foodary Broome,50 Mavis Rd,BILINGURR,Broome
+74,Ampol Foodary Bunbury,1 Forrest Ave,BUNBURY,Bunbury
+75,Ampol Foodary Busselton,115 Strelly St,BUSSELTON,Busselton-Shire
+76,Ampol Foodary Butler,11 Headingly Cr,BUTLER,North of River
+77,Ampol Foodary Byford,Lot 22 South Western Hwy,BYFORD,South of River
+78,Ampol Foodary Cannington,1346 Albany Hwy,CANNINGTON,South of River
+79,Ampol Foodary Carine,510 Beach Rd,CARINE,North of River
+80,Ampol Foodary Carnarvon,595 Robinson St,KINGSFORD,Carnarvon
+81,Ampol Foodary Clarkson,7 Ocean Keys Bvd,CLARKSON,North of River
+82,Ampol Foodary Cockburn Central,875 Beeliar Dr,JANDAKOT,South of River
+83,Ampol Foodary Coolgardie,110-114 Bayley St,COOLGARDIE,Coolgardie
+84,Ampol Foodary Dawesville,191 Bailey Bvd,DAWESVILLE,Mandurah
+85,Ampol Foodary Doubleview,365 Scarborough Beach Rd,DOUBLEVIEW,North of River
+86,Ampol Foodary East Fremantle,176 Canning Hwy,EAST FREMANTLE,South of River
+87,Ampol Foodary East Perth,157 Lord St,PERTH,North of River
+88,Ampol Foodary Eaton,1 Pratt Rd,EATON,Dardanup
+89,Ampol Foodary Erskine,112 Oakleigh Dr,ERSKINE,Mandurah
+90,Ampol Foodary Esperance,59 Dempster St,ESPERANCE,Esperance
+91,Ampol Foodary Exmouth,77 Maidstone Cr,EXMOUTH,Exmouth
+92,Ampol Foodary Falcon (Miami Beach),2 Baroy St,FALCON,Mandurah
+93,Ampol Foodary Forrest Highway North,Lot 602 Forrest Hwy,WEST PINJARRA,Murray
+94,Ampol Foodary Forrest Highway South,Lot 601 Forrest Hwy,WEST PINJARRA,Murray
+95,Ampol Foodary Forrestdale,63 Alex Wood Dr,FORRESTDALE,South of River
+96,Ampol Foodary Gelorup,39 Bussell Hwy,GELORUP,Capel
+97,Ampol Foodary Glendalough,2 Jon Sanders Dr,GLENDALOUGH,North of River
+98,Ampol Foodary Gosnells,158 Corfield St,GOSNELLS,South of River
+99,Ampol Foodary Gosnells North,2100 Albany Hwy,GOSNELLS,South of River
+100,Ampol Foodary Greenfields,35 Minilya Pkwy,GREENFIELDS,Mandurah
+101,Ampol Foodary High Wycombe,967-969 Abernethy Rd,HIGH WYCOMBE,East/Hills
+102,Ampol Foodary Joondalup,420 Joondalup Dr,JOONDALUP,North of River
+103,Ampol Foodary Kalgoorlie,581 Hannan St,SOMERVILLE,Kalgoorlie
+104,Ampol Foodary Kalgoorlie South,146 Boulder Rd,SOUTH KALGOORLIE,Kalgoorlie
+105,Ampol Foodary Karratha,Lot 3861 Bathgate Rd,NICKOL,Karratha
+106,Ampol Foodary Karrinyup,490 Karrinyup Rd,GWELUP,North of River
+107,Ampol Foodary Kelmscott,2877 Albany Hwy,KELMSCOTT,South of River
+108,Ampol Foodary Kewdale,2 Fenton St,KEWDALE,South of River
+109,Ampol Foodary Kingsley,86 Kingsley Dr,KINGSLEY,North of River
+110,Ampol Foodary Kwinana,Cnr Mandurah Rd & Wellard Rd,KWINANA BEACH,South of River
+111,Ampol Foodary Lakelands,Lot 50 Mandurah Rd,MEADOW SPRINGS,Mandurah
+112,Ampol Foodary Leederville,319 Vincent St,LEEDERVILLE,North of River
+113,Ampol Foodary Livingston,110 Ranford Rd,CANNING VALE,South of River
+114,Ampol Foodary Malaga,1 Capital Rd,MALAGA,North of River
+115,Ampol Foodary Malaga Drive,76 Malaga Dr,MALAGA,North of River
+116,Ampol Foodary Melville,585 Canning Hwy,ALFRED COVE,South of River
+117,Ampol Foodary Midvale,371 Great Eastern Hwy,MIDVALE,East/Hills
+118,Ampol Foodary Morley,298 Benara Rd,MORLEY,North of River
+119,Ampol Foodary Mosman Park,676 Stirling Hwy,MOSMAN PARK,North of River
+120,Ampol Foodary Mt Lawley,810 Beaufort St,MOUNT LAWLEY,North of River
+121,Ampol Foodary Mundaring,5895 Great Eastern Hwy,MUNDARING,East/Hills
+122,Ampol Foodary Murdoch,10 Robson Way,MURDOCH,South of River
+123,Ampol Foodary Nedlands,7 Broadway,NEDLANDS,North of River
+124,Ampol Foodary Newman,Lot 1328 Newman Dr,NEWMAN,Newman
+125,Ampol Foodary Norseman,1 Princep St,NORSEMAN,Norseman
+126,Ampol Foodary North Road,204 North Rd,YAKAMIA,Albany
+127,Ampol Foodary North Wanneroo,2624 Wanneroo Rd,NOWERGUP,North of River
+128,Ampol Foodary North Yunderup,868 Pinjarra Rd,FURNISSDALE,Murray
+129,Ampol Foodary Northlands,391 Wanneroo Rd,BALCATTA,North of River
+130,Ampol Foodary O'Connor,309 Stock Rd,O'CONNOR,South of River
+131,Ampol Foodary Riverton,268 High Rd,RIVERTON,South of River
+132,Ampol Foodary Rivervale,111 Great Eastern Hwy,RIVERVALE,South of River
+133,Ampol Foodary Rockingham,29 Dixon Rd,ROCKINGHAM,South of River
+134,Ampol Foodary Scarborough,74 Scarborough Beach Rd,SCARBOROUGH,North of River
+135,Ampol Foodary Secret Harbour,420 Secret Harbour Bvd,SECRET HARBOUR,South of River
+136,Ampol Foodary South Hedland,67 Hamilton Rd,SOUTH HEDLAND,Port Hedland
+137,Ampol Foodary South Lake,2 Omeo St,SOUTH LAKE,South of River
+138,Ampol Foodary Stratton,240 Toodyay Rd,STRATTON,East/Hills
+139,Ampol Foodary Subiaco,194 Rokeby Rd,SUBIACO,North of River
+140,Ampol Foodary Thornlie,223 Yale Rd,THORNLIE,South of River
+141,Ampol Foodary Thornlie Square,316 Spencer Rd,THORNLIE,South of River
+142,Ampol Foodary Wangara,79 Buckingham Dr,WANGARA,North of River
+143,Ampol Foodary Warnbro,2 Bristol St,WARNBRO,South of River
+144,Ampol Foodary Westminster,436 Wanneroo Rd,WESTMINSTER,North of River
+145,Ampol Foodary Willetton,169 High Rd,WILLETTON,South of River
+146,Ampol Foodary Williams,56 Albany Hwy,WILLIAMS,Williams
+147,Ampol Foodary Wonthella,40 North West Coastal Hwy,WONTHELLA,Geraldton
+148,Ampol Foodary Yanchep,1 Morwell St,YANCHEP,North of River
+149,Ampol Foodary Yangebup,289 Beeliar Dr,YANGEBUP,South of River
+150,Ampol Jurien Bay,22 Bashford St,JURIEN BAY,Jurien
+151,Ampol Kalgoorlie Diesel Stop,2 Cunningham Rd,WEST KALGOORLIE,Boulder
+152,Ampol Maddington Truck Stop,18 Orchard Rd,MADDINGTON,South of River
+153,Ampol Meckering,31 Dreyer St,MECKERING,Meckering
+154,Ampol Meckering Roadhouse,31 Dreyer St,MECKERING,Meckering
+155,Ampol Narrogin,12 Clayton Rd,NARROGIN,Narrogin
+156,Ampol Picton Depot With Front,1 Wimbridge Rd,PICTON,Bunbury
+157,Ampol Rous Head,Cnr North Mole Dr & Rous Head Rd,NORTH FREMANTLE,North of River
+158,Ampol StarMart Exmouth,77 Maidstone Cr,EXMOUTH,Exmouth
+159,Ampol Wedgefield Diesel Stop,12-14 Cajarina Rd,WEDGEFIELD,Port Hedland
+160,Ampol Welshpool Diesel Stop,119 Kurnall Rd,WELSHPOOL,South of River
+161,Ampol West Busselton,259 Bussell Hwy,WEST BUSSELTON,Busselton-Shire
+162,BP 2go Armadale,3249 Albany Hwy,ARMADALE,South of River
+163,BP 2go Australind,80 Old Coast Rd,AUSTRALIND,Harvey
+164,BP 2go Bellevue,59 Great Eastern Hwy,BELLEVUE,East/Hills
+165,BP 2go Burrendah,69 Pinetree Gully Rd,WILLETTON,South of River
+166,BP 2go Cannington,1443 Albany Hwy,CANNINGTON,South of River
+167,BP 2go Collins Road,121 Collins Rd,WILLETTON,South of River
+168,BP 2go Morrison Road,228 Morrison Rd,MIDVALE,East/Hills
+169,BP 2go Noranda,40 Benara Rd,NORANDA,North of River
+170,BP 2go Silver Sands,183-187 Mandurah Tce,MANDURAH,Mandurah
+171,BP 2go Woodvale,941 Whitfords Ave,WOODVALE,North of River
+172,BP Allway,35 Albany Hwy,ALBANY,Albany
+173,BP Applecross,848 Canning Hwy,APPLECROSS,South of River
+174,BP Attadale,530 Canning Hwy,ATTADALE,South of River
+175,BP Augusta,64-66 Blackwood Ave,AUGUSTA,Augusta-M River
+176,BP Balcatta,53 Erindale Rd,BALCATTA,North of River
+177,BP Baldivis Northbound Travel Centre,Lot 191 Paparone Rd,BALDIVIS,South of River
+178,BP Baldivis Southbound Travel Centre,Lot 192 Leary Rd,BALDIVIS,South of River
+179,BP Baldivis West,909 Mandurah Rd,BALDIVIS,South of River
+180,BP Ballajura,2 Illawarra Cres North,BALLAJURA,North of River
+181,BP Baskerville,1084 Great Northern Hwy,BASKERVILLE,East/Hills
+182,BP Beeliar,701 Beeliar Dr,COCKBURN CENTRAL,South of River
+183,BP Beldon,261 Eddystone Ave,BELDON,North of River
+184,BP Bibra Lake,2 Wellard St,BIBRA LAKE,South of River
+185,BP Broome Central Service Centre,2 Coghlan St,DJUGUN,Broome
+186,BP Bull Creek,83 Wheatley Dr,BULL CREEK,South of River
+187,BP Busselton,26 Albert St,BUSSELTON,Busselton-Shire
+188,BP Canning Vale,1 Wilfred Rd,CANNING VALE,South of River
+189,BP Canning Vale OPT,13 Bannister Rd,CANNING VALE,South of River
+190,BP Carnarvon,1134 North West Coastal Hwy,BROWN RANGE,Carnarvon
+191,BP Caversham,40 Bennett St,CAVERSHAM,North of River
+192,BP Clarkson,28K Caloundra Rd,CLARKSON,North of River
+193,BP Connect Ascot (WA),210 Great Eastern Hwy,ASCOT,South of River
+194,BP Connect Beaumauris,2 Prendiville Ave,OCEAN REEF,North of River
+195,BP Connect Carlisle,44 Archer St,CARLISLE,South of River
+196,BP Connect Currambine,2 Sunlander Dr,CURRAMBINE,North of River
+197,BP Connect East Perth,68-70 Brown St,EAST PERTH,North of River
+198,BP Connect Karrinyup,190 Karrinyup Rd,KARRINYUP,North of River
+199,BP Connect Kwinana Hub,4 Chisham Ave,KWINANA TOWN CENTRE,South of River
+200,BP Connect Main Street,218 Main St,OSBORNE PARK,North of River
+201,BP Connect Merriwa,2 Ridgewood Bvd,RIDGEWOOD,North of River
+202,BP Connect Myaree,246 Leach Hwy,MYAREE,South of River
+203,BP Connect North Perth,349 Charles St,NORTH PERTH,North of River
+204,BP Connect Padbury,2 Warburton Ave,PADBURY,North of River
+205,BP Connect Palm Springs,214 Warnbro Sound Ave,WARNBRO,South of River
+206,BP Connect Phoenix,222 Rockingham Rd,SPEARWOOD,South of River
+207,BP Connect Riverton,339 High Rd,RIVERTON,South of River
+208,BP Connect Rockingham Park,2 Chalgrove Ave,ROCKINGHAM,South of River
+209,BP Connect South Perth,9 Mends St,SOUTH PERTH,South of River
+210,BP Connect Thomsons Lake,810 Beeliar Dr,SUCCESS,South of River
+211,BP Connect Wellington Rd,261 Walter Rd West,MORLEY,North of River
+212,BP Connect Wembley,240 Cambridge St,WEMBLEY,North of River
+213,BP Connect West Coast,11 Scarborough Beach Rd,SCARBOROUGH,North of River
+214,BP Cowaramup,1 Roy Earl Dr,COWARAMUP,Augusta-M River
+215,BP Crystal Brook (Lesmurdie),7 Welshpool Rd East,LESMURDIE,East/Hills
+216,BP Cunderdin Roadhouse,Lot 6 Great Eastern Hwy,CUNDERDIN,Cunderdin
+217,BP Denmark,44 South Coast Hwy,DENMARK,Denmark
+218,BP Derby,138 Loch St,DERBY,Derby
+219,BP Dog Swamp,4 Wanneroo Rd,YOKINE,North of River
+220,BP Donnybrook,15 South Western Hwy,DONNYBROOK,D-Brook/Bal-Up
+221,BP Dunsborough,238 Naturaliste Tce,DUNSBOROUGH,Busselton-Shire
+222,BP East Rockingham,137 Dixon Rd,EAST ROCKINGHAM,South of River
+223,BP Edgewater,2 The Gateway,EDGEWATER,North of River
+224,BP Ellenbrook,180 The Promenade,ELLENBROOK,North of River
+225,BP Embleton,484 Walter Rd East,EMBLETON,North of River
+226,BP Fitzroy Crossing,Lot 315 Great Northern Hwy,FITZROY CROSSING,Fitzroy Cross
+227,BP Forrestdale,2 Alex Wood Dr,FORRESTDALE,South of River
+228,BP Forrestfield,155 Hale Rd,FORRESTFIELD,East/Hills
+229,BP Golden Gate,438 Hannan St,KALGOORLIE,Kalgoorlie
+230,BP Greenwood,11 Coolibah Dr,GREENWOOD,North of River
+231,BP Greenwood North,1 Canham Way,GREENWOOD,North of River
+232,BP Halls Head,2 Guava Way,HALLS HEAD,Mandurah
+233,BP Henley Brook,1520 Gnangara Rd,HENLEY BROOK,North of River
+234,BP Highgate,342 Beaufort St,PERTH,North of River
+235,BP Huntingdale,68 Warton Rd,HUNTINGDALE,South of River
+236,BP Jindalee,2 Abello Bvd,JINDALEE,North of River
+237,BP Jurien Bay,110 Bashford St,JURIEN BAY,Jurien
+238,BP Kalgoorlie-Boulder Truckstop,248 Celebration Rd,YILKARI,Boulder
+239,BP Kambalda,Lot 35 Goldfields Hwy,KAMBALDA EAST,Kambalda
+240,BP Kardinya,88 Gilbertson Rd,KARDINYA,South of River
+241,BP Karratha Service Station,30 Balmoral Rd,KARRATHA,Karratha
+242,BP Karratha West,Lot 9 Resource Rd,GAP RIDGE,Karratha
+243,BP Kelmscott,2907 Albany Hwy,KELMSCOTT,South of River
+244,BP Kenwick,48 Courtney Pl,WATTLE GROVE,East/Hills
+245,BP Kewdale,549 Abernethy Rd,KEWDALE,South of River
+246,BP Koondoola,28 Koondoola Ave,KOONDOOLA,North of River
+247,BP Langford,230-234 Nicholson Rd,LANGFORD,South of River
+248,BP Maida Vale,269 Kalamunda Rd,MAIDA VALE,East/Hills
+249,BP Malaga,370 Victoria Rd,MALAGA,North of River
+250,BP Mandurah,304 Pinjarra Rd,MANDURAH,Mandurah
+251,BP Manjimup,96 Giblett St,MANJIMUP,Manjimup
+252,BP Manning,73 Manning Rd,COMO,South of River
+253,BP Mindarie,360 Anchorage Dr North,MINDARIE,North of River
+254,BP Moora Depot,153 Gardiner St,MOORA,Moora
+255,BP Morley,335 Walter Rd West,MORLEY,North of River
+256,BP Mount Barker,25 Mitchell Rd,MOUNT BARKER,Mt Barker
+257,BP Mullaloo,101 Dampier Av,MULLALOO,North of River
+258,BP Munglinup,16 Tubada St,MUNGLINUP,Munglinup
+259,BP Narrogin,37 Federal St,NARROGIN,Narrogin
+260,BP Naval Base,1351 Rockingham Rd,NAVAL BASE,South of River
+261,BP Newman South,101 Great Northern Hwy,NEWMAN,Newman
+262,BP Nookenburra,386 Scarborough Beach Rd,INNALOO,North of River
+263,BP Norseman,Lot 2 Eyre Hwy,NORSEMAN,Norseman
+264,BP Northam OPT,78 Old York Rd,NORTHAM,Northam-Shire
+265,BP Parklands,85 Forrest Ave,SOUTH BUNBURY,Bunbury
+266,BP Pemberton Garage & Service Station,84 Brockman St,PEMBERTON,Manjimup
+267,BP Piara Waters,12 Erade Dr,PIARA WATERS,South of River
+268,BP Picton Wetherley Dr,24 Wetherly Dr,PICTON,Bunbury
+269,BP Port Hedland,90 Anderson St,PORT HEDLAND,Port Hedland
+270,BP Port Hedland Boulevard,150 Anderson St,PORT HEDLAND,Port Hedland
+271,BP Port Kennedy,46 Bakewell Dr,PORT KENNEDY,South of River
+272,BP Ravensthorpe,47 Morgans St,RAVENSTHORPE,Ravensthorpe
+273,BP Redcliffe,419 Great Eastern Hwy,REDCLIFFE,South of River
+274,BP Roadhouse Bridgetown,43 Hampton St,BRIDGETOWN,B-Town/G-Bushes
+275,BP Roadhouse Dongara,30373 Brand Hwy,DONGARA,Dongara
+276,BP Roadhouse Fitzroy Crossing,Lot 315 Great Northern Hwy,FITZROY CROSSING,Fitzroy Cross
+277,BP Roadhouse Harvey,18 South Western Hwy,HARVEY,Harvey
+278,BP Rosegarden,129 Stirling Hwy,NEDLANDS,North of River
+279,BP Sawyers Valley,10895 Great Eastern Hwy,SAWYERS VALLEY,East/Hills
+280,BP Shinju Broome,101 Guy St,BROOME,Broome
+281,BP Singleton,2514 Mandurah Rd,SINGLETON,South of River
+282,BP Sorrento,128 West Coast Dr,SORRENTO,North of River
+283,BP South Bunbury,188 Spencer St,SOUTH BUNBURY,Bunbury
+284,BP South Fremantle,229B Hampton Rd,SOUTH FREMANTLE,South of River
+285,BP South Hedland,2 Throssell Rd,SOUTH HEDLAND,Port Hedland
+286,BP Spencer Park Service Station,30 Angove Rd,SPENCER PARK,Albany
+287,BP The Lakes Roadhouse,13724 Great Eastern Hwy,THE LAKES,East/Hills
+288,BP Thornlie,459 Nicholson Rd,CANNING VALE,South of River
+289,BP Waikiki,430 Safety Bay Rd,SAFETY BAY,South of River
+290,BP Walpole,18 Nockolds St,WALPOLE,Manjimup
+291,BP Welshpool,1 Ballantyne Rd,KEWDALE,South of River
+292,BP Westgate,85 Queen Victoria St,FREMANTLE,South of River
+293,BP Williams Roadhouse,16 Albany Hwy,WILLIAMS,Williams
+294,BP Wonthella Service Station,190 North West Coastal Hwy,WEBBERTON,Geraldton
+295,BP Woodbridge,380 Great Eastern Hwy,WOODBRIDGE,South of River
+296,BP Wubin,80-82 Great Northern Hwy,WUBIN,Wubin
+297,Binningup General Store,21 Coronation Dr,BINNINGUP,Harvey
+298,Caltex Woolworths Alkimos,11 Shorehaven Bvd,ALKIMOS,North of River
+299,Caltex Woolworths Australind,Cnr Grand Ent & The Promenade,AUSTRALIND,Harvey
+300,Caltex Woolworths Aveley,317 Millhouse Rd,AVELEY,North of River
+301,Caltex Woolworths Ballajura,5 Hamelin Dr,BALLAJURA,North of River
+302,Caltex Woolworths Brooks Garden,162 Chester Pass Rd,LANGE,Albany
+303,Caltex Woolworths Bunbury,Lot 68 Pennant Rd,EAST BUNBURY,Bunbury
+304,Caltex Woolworths Busselton,36 Duchess St,BUSSELTON,Busselton-Shire
+305,Caltex Woolworths Canning Vale,15 Sarah Cl,CANNING VALE,South of River
+306,Caltex Woolworths Cannington,25 Cecil Ave,CANNINGTON,South of River
+307,Caltex Woolworths Carnarvon,90 Robinson St,CARNARVON,Carnarvon
+308,Caltex Woolworths Currambine Marketplace,1244 Marmion Ave,CURRAMBINE,North of River
+309,Caltex Woolworths Dianella,372 Grand Prom,DIANELLA,North of River
+310,Caltex Woolworths Djugun,106 Frederick St,DJUGUN,Broome
+311,Caltex Woolworths Eaton,2 Recreation Dr,EATON,Dardanup
+312,Caltex Woolworths Ellenbrook,11 Main St,ELLENBROOK,North of River
+313,Caltex Woolworths Falcon,651 Old Coast Rd,FALCON,Mandurah
+314,Caltex Woolworths Floreat,5 Howtree Pl,FLOREAT,North of River
+315,Caltex Woolworths Forrestfield,78C Hale Rd,FORRESTFIELD,East/Hills
+316,Caltex Woolworths Geraldton,59 Cathedral Ave,GERALDTON,Geraldton
+317,Caltex Woolworths Greenwood,37 Canham Way,GREENWOOD,North of River
+318,Caltex Woolworths Joondalup Winton Road,189 Winton Rd,JOONDALUP,North of River
+319,Caltex Woolworths Kalgoorlie,104 Brookman St,KALGOORLIE,Kalgoorlie
+320,Caltex Woolworths Karratha,Lot 1437 Warambie Rd,KARRATHA,Karratha
+321,Caltex Woolworths Maddington Centro Shopping Centre,77 Attfield St,MADDINGTON,South of River
+322,Caltex Woolworths Maddington West,207 Burslem Dr,MADDINGTON,South of River
+323,Caltex Woolworths Mandurah,10-12 Magenta Tce,MANDURAH,Mandurah
+324,Caltex Woolworths Mandurah Forum,330 Pinjarra Rd,MANDURAH,Mandurah
+325,Caltex Woolworths Manjimup,89 Mottram St,MANJIMUP,Manjimup
+326,Caltex Woolworths Mirrabooka,53 Yirrigan Dr,MIRRABOOKA,North of River
+327,Caltex Woolworths Morley Galleria,60 Russell St,MORLEY,North of River
+328,Caltex Woolworths Northam,86 Wellington St,NORTHAM,Northam-Shire
+329,Caltex Woolworths Osborne Park,401 Scarborough Beach Rd,OSBORNE PARK,North of River
+330,Caltex Woolworths Port Hedland,150 Anderson St,PORT HEDLAND,Port Hedland
+331,Caltex Woolworths Port Kennedy,12 Saltaire Way,PORT KENNEDY,South of River
+332,Caltex Woolworths South Fremantle,219 Hampton Rd,SOUTH FREMANTLE,South of River
+333,Caltex Woolworths South Lake,752 North Lake Rd,SOUTH LAKE,South of River
+334,Caltex Woolworths Southern River,466 Warton Rd,SOUTHERN RIVER,South of River
+335,Caltex Woolworths Warnbro,202 Warnbro Sound Ave,WARNBRO,South of River
+336,Caltex Woolworths Whitfords,470 Whitfords Ave,HILLARYS,North of River
+337,Cape Agencies,20 Windsor Rd,WELLSTEAD,Albany
+338,Castletown Service Station,57 Goldfields Rd,CASTLETOWN,Esperance
+339,Coles Express Albany Orana,342 Albany Hwy,ORANA,Albany
+340,Colroy Country Kitchen,93 Capel Dr,CAPEL,Capel
+341,Crudeli's Auto Repairs,24 Maitland Rd,MULLEWA,Geraldton
+342,Del Park Roadhouse,4267 South Western Hwy,NORTH DANDALUP,Murray
+343,Derby Fuels,46 Clarendon St,DERBY,Derby
+344,Dunning's Broome,7 Clementson St,BROOME,Broome
+345,Dunning's Carnarvon,125 Robinson St,MORGANTOWN,Carnarvon
+346,Dunning's Newman,21 Willis St,NEWMAN,Newman
+347,Dunning's Northam,38 Peel Tce,NORTHAM,Northam-Shire
+348,Dunning's Thompsons Garage,127 Giblett St,MANJIMUP,Manjimup
+349,Dwellingup BP,48 McLarty St,DWELLINGUP,Murray
+350,EG Ampol Alkimos,11 Shorehaven Bvd,ALKIMOS,North of River
+351,EG Ampol Australind,Cnr Grand Ent & The Promenade,AUSTRALIND,Harvey
+352,EG Ampol Aveley,317 Millhouse Rd,AVELEY,North of River
+353,EG Ampol Ballajura,5 Hamelin Dr,BALLAJURA,North of River
+354,EG Ampol Banksia Grove,133 Ghost Gum Bvd,BANKSIA GROVE,North of River
+355,EG Ampol Brabham,3 Marvel Ent,BRABHAM,East/Hills
+356,EG Ampol Brooks Garden,162 Chester Pass Rd,LANGE,Albany
+357,EG Ampol Bunbury,Lot 68 Pennant Rd,EAST BUNBURY,Bunbury
+358,EG Ampol Busselton,36 Duchess St,BUSSELTON,Busselton-Shire
+359,EG Ampol Canning Vale,15 Sarah Cl,CANNING VALE,South of River
+360,EG Ampol Cannington,25 Cecil Ave,CANNINGTON,South of River
+361,EG Ampol Carnarvon,90 Robinson St,CARNARVON,Carnarvon
+362,EG Ampol Currambine Marketplace,1244 Marmion Ave,CURRAMBINE,North of River
+363,EG Ampol Dianella,372 Grand Prom,DIANELLA,North of River
+364,EG Ampol Djugun,106 Frederick St,DJUGUN,Broome
+365,EG Ampol Eaton,2 Recreation Dr,EATON,Dardanup
+366,EG Ampol Ellenbrook,11 Main St,ELLENBROOK,North of River
+367,EG Ampol Falcon,651 Old Coast Rd,FALCON,Mandurah
+368,EG Ampol Floreat,5 Howtree Pl,FLOREAT,North of River
+369,EG Ampol Forrestfield,78C Hale Rd,FORRESTFIELD,East/Hills
+370,EG Ampol Geraldton,59 Cathedral Ave,GERALDTON,Geraldton
+371,EG Ampol Greenwood,37 Canham Way,GREENWOOD,North of River
+372,EG Ampol Joondalup Winton Road,189 Winton Rd,JOONDALUP,North of River
+373,EG Ampol Kalgoorlie,104 Brookman St,KALGOORLIE,Kalgoorlie
+374,EG Ampol Karratha,Lot 1437 Warambie Rd,KARRATHA,Karratha
+375,EG Ampol Maddington Centro Shopping Centre,77 Attfield St,MADDINGTON,South of River
+376,EG Ampol Maddington West,207 Burslem Dr,MADDINGTON,South of River
+377,EG Ampol Mandurah,10-12 Magenta Tce,MANDURAH,Mandurah
+378,EG Ampol Mandurah Forum,330 Pinjarra Rd,MANDURAH,Mandurah
+379,EG Ampol Manjimup,89 Mottram St,MANJIMUP,Manjimup
+380,EG Ampol Mirrabooka,53 Yirrigan Dr,MIRRABOOKA,North of River
+381,EG Ampol Morley Galleria,60 Russell St,MORLEY,North of River
+382,EG Ampol Northam,86 Wellington St,NORTHAM,Northam-Shire
+383,EG Ampol Osborne Park,401 Scarborough Beach Rd,OSBORNE PARK,North of River
+384,EG Ampol Port Kennedy,12 Saltaire Way,PORT KENNEDY,South of River
+385,EG Ampol South Fremantle,219 Hampton Rd,SOUTH FREMANTLE,South of River
+386,EG Ampol South Lake,752 North Lake Rd,SOUTH LAKE,South of River
+387,EG Ampol Southern River,466 Warton Rd,SOUTHERN RIVER,South of River
+388,EG Ampol Warnbro,202 Warnbro Sound Ave,WARNBRO,South of River
+389,EG Ampol Whitfords,470 Whitfords Ave,HILLARYS,North of River
+390,Elleker General Store,1309 Lower Denmark Rd,ELLEKER,Albany
+391,GD's Brunswick Roadhouse,94 Ommaney Rd,BRUNSWICK,Harvey
+392,GSG WA Pty Ltd,111 Morgans St,RAVENSTHORPE,Ravensthorpe
+393,Geographe Petroleum,84 Strelly St,BUSSELTON,Busselton-Shire
+394,Geographe Petroleum Margaret River,12 Auger Way,MARGARET RIVER,Augusta-M River
+395,Harbour Rd Truckstop,213 Harbour Rd,CHADWICK,Esperance
+396,Herne Hill General Store,777 Great Northern Hwy,HERNE HILL,East/Hills
+397,Hi-Way Sales & Service 1982,154 Albany Hwy,KOJONUP,Kojonup
+398,Hillview Roadhouse and Motel,47 Albany Hwy,KOJONUP,Kojonup
+399,Jurien Bay Service Station & Roadhouse,22 Bashford St,JURIEN BAY,Jurien
+400,Karnup Roadhouse,2263 Mandurah Rd,KARNUP,South of River
+401,Karridale Crossroads General Store,12425 Bussell Hwy,KARRIDALE,Augusta-M River
+402,Little Grove General Store,639 Frenchmans Bay Rd,LITTLE GROVE,Albany
+403,Manypeaks Store,43738 South Coast Hwy,MANYPEAKS,Albany
+404,Meekatharra Corner Store,16 Main St,MEEKATHARRA,Meekatharra
+405,Metro Albany,269 York St,ALBANY,Albany
+406,Metro Bassendean,335 Collier Rd,BASSENDEAN,North of River
+407,Metro Canning Vale,Lot 322 Ranford Rd,CANNING VALE,South of River
+408,Metro Geraldton,1 Fortyn Ct,MAHOMETS FLATS,Geraldton
+409,Metro Jurien Bay,74 Bashford St,JURIEN BAY,Jurien
+410,Metro Malaga,1 Harlond Ave,MALAGA,North of River
+411,Metro Wangara,79 Gnangara Rd,WANGARA,North of River
+412,Metro Wanneroo,994 Wanneroo Rd,WANNEROO,North of River
+413,Moonyoonooka Store,753 Geraldton-Mt Magnet Rd,MOONYOONOOKA,Geraldton
+414,Ngiyali Roadhouse,Lot 315 Great Northern Hwy,FITZROY CROSSING,Fitzroy Cross
+415,NightOwl BP Armadale,3249 Albany Hwy,ARMADALE,South of River
+416,NightOwl BP Mandurah,304 Pinjarra Rd,MANDURAH,Mandurah
+417,NightOwl Shell Bellevue,49 Great Eastern Hwy,BELLEVUE,East/Hills
+418,NightOwl Shell Highgate,3 Guildford Rd,MOUNT LAWLEY,North of River
+419,NightOwl Shell Kalamunda,7 Mead St,KALAMUNDA,East/Hills
+420,NightOwl Shell Maddington,1 Davison St,MADDINGTON,South of River
+421,NightOwl Shell Ravenswood,6 Beacham Rd,RAVENSWOOD,Murray
+422,NightOwl Shell Redcliffe,443 Great Eastern Hwy,REDCLIFFE,South of River
+423,OTR Bunbury,92 Blair St,BUNBURY,Bunbury
+424,OTR Como,73 Manning Rd,COMO,South of River
+425,OTR Maddington,1-3 Sampson St,MADDINGTON,South of River
+426,OTR Perth Pier Street,17 Brisbane St,PERTH,North of River
+427,Petro Fuels Cataby,10513 Brand Hwy,CATABY,Cataby
+428,Petro Fuels Denmark,69 South Coast Hwy,DENMARK,Denmark
+429,Petro Fuels Karragullen,1287 Brookton Hwy,KARRAGULLEN,East/Hills
+430,Petro Fuels Mount Barker,25 Mitchell Rd,MOUNT BARKER,Mt Barker
+431,Puma Alexander Heights,200 Mirrabooka Ave,ALEXANDER HEIGHTS,North of River
+432,Puma Armadale Central,10 Orchard Ave,ARMADALE,South of River
+433,Puma Balcatta,229 Balcatta Rd,BALCATTA,North of River
+434,Puma Baldivis,67 Ridge Bvd,BALDIVIS,South of River
+435,Puma Bayswater,502 Guildford Rd,BAYSWATER,North of River
+436,Puma Bedfordale,681 Albany Hwy,BEDFORDALE,East/Hills
+437,Puma Bellevue,16-20 Clayton St,BELLEVUE,East/Hills
+438,Puma Belmont,33 Belvidere St,BELMONT,South of River
+439,Puma Binningup,7080 Forrest Hwy,BINNINGUP,Harvey
+440,Puma Bunbury South,1 Brittain Rd,CAREY PARK,Bunbury
+441,Puma Burswood,265 Great Eastern Hwy,BURSWOOD,South of River
+442,Puma Busselton,99 Causeway Rd,BUSSELTON,Busselton-Shire
+443,Puma Byford,8 Kardan Bvd,BYFORD,South of River
+444,Puma Castletown,49 Norseman Rd,CASTLETOWN,Esperance
+445,Puma Como,393 Canning Hwy,COMO,South of River
+446,Puma Dalwallinu,4 Johnston St,DALWALLINU,Dalwallinu
+447,Puma Dayton,8 Repton St,DAYTON,North of River
+448,Puma Dianella,63 Walter Rd West,DIANELLA,North of River
+449,Puma Esperance OPT,Lot 6 Beckwith Rd,CHADWICK,Esperance
+450,Puma Glen Forrest,1400 Great Eastern Hwy,GLEN FORREST,East/Hills
+451,Puma Glenfield,1182 Chapman Rd,GLENFIELD,Geraldton
+452,Puma Guildford,22 Johnson St,GUILDFORD,South of River
+453,Puma Gwelup,1 Wishart St,GWELUP,North of River
+454,Puma Hamilton Hill,224 Clontarf Rd,HAMILTON HILL,South of River
+455,Puma Hamilton Hill South,216 Rockingham Rd,HAMILTON HILL,South of River
+456,Puma Harvey,77 Uduc Rd,HARVEY,Harvey
+457,Puma Henderson OPT,81 Quill Way,HENDERSON,South of River
+458,Puma High Wycombe,494 Kalamunda Rd,HIGH WYCOMBE,East/Hills
+459,Puma Joondalup,49 Candlewood Bvd,JOONDALUP,North of River
+460,Puma Kalamunda,26 Kalamunda Rd,KALAMUNDA,East/Hills
+461,Puma Kalgoorlie,77 Egan St,KALGOORLIE,Kalgoorlie
+462,Puma Karragullen Motors,164 Brookton Hwy,KARRAGULLEN,East/Hills
+463,Puma Kiara,157 Morley Dr,KIARA,North of River
+464,Puma Kununurra,32 Bandicoot Dr,KUNUNURRA,Kununurra
+465,Puma Kununurra Depot,2257 Victoria Hwy,KUNUNURRA,Kununurra
+466,Puma Landsdale,220 Gnangara Rd,LANDSDALE,North of River
+467,Puma Lesmurdie,194 Canning Rd,LESMURDIE,East/Hills
+468,Puma Lynwood,2 Lynwood Ave,LYNWOOD,South of River
+469,Puma Maddington,137 Kelvin Rd,MADDINGTON,South of River
+470,Puma Madeley,182 Wanneroo Rd,MADELEY,North of River
+471,Puma Malaga,1896 Beach Rd,MALAGA,North of River
+472,Puma Mandurah,715 Pinjarra Rd,BARRAGUP,Murray
+473,Puma Manjimup Roadhouse,1182 South Western Hwy,MANJIMUP,Manjimup
+474,Puma Meadow Springs,25 Meadow Springs Dr,MEADOW SPRINGS,Mandurah
+475,Puma Merriwa,4 Hughie Edwards Dr,MERRIWA,North of River
+476,Puma Midvale,232 Morrison Rd,MIDVALE,East/Hills
+477,Puma Mindarie,22 Anchorage Dr,MINDARIE,North of River
+478,Puma Mount Lawley,81 Guildford Rd,MOUNT LAWLEY,North of River
+479,Puma Mt Melville,317 Albany Hwy,MOUNT MELVILLE,Albany
+480,Puma Mundaring,7060 Great Eastern Hwy,MUNDARING,East/Hills
+481,Puma Munster,512 Rockingham Rd,MUNSTER,South of River
+482,Puma Murdoch,170 Murdoch Dr,MURDOCH,South of River
+483,Puma Myalup,6043 Forrest Hwy,MYALUP,Harvey
+484,Puma Neerabup,2056 Wanneroo Rd,NEERABUP,North of River
+485,Puma North Perth,311 Fitzgerald St,WEST PERTH,North of River
+486,Puma Ord River Roadhouse,5 Messmate Way,KUNUNURRA,Kununurra
+487,Puma Osborne Park,8 Main St,OSBORNE PARK,North of River
+488,Puma Parmelia,60 Meares Ave,KWINANA TOWN CENTRE,South of River
+489,Puma Pearsall,204 Shiraz Bvd,PEARSALL,North of River
+490,Puma Piccadilly,7 Maritana St,PICCADILLY,Kalgoorlie
+491,Puma Ranford,4 Remisko Dr,FORRESTDALE,South of River
+492,Puma Sawyers Valley,96 Great Eastern Hwy,SAWYERS VALLEY,East/Hills
+493,Puma South Hedland,1 Altitude Ave,PORT HEDLAND,Port Hedland
+494,Puma Stratham Downs Roadhouse,1540 Bussell Hwy,STRATHAM,Capel
+495,Puma Tammin Roadhouse,15323 Great Eastern Hwy,TAMMIN,Tammin
+496,Puma Tarcoola,156 Brand Hwy,TARCOOLA BEACH,Geraldton
+497,Puma Upper Swan,1383 Great Northern Hwy,UPPER SWAN,East/Hills
+498,Puma Victoria Park,162-170 Albany Hwy,VICTORIA PARK,South of River
+499,Puma Wangara,1 Brady St,WANGARA,North of River
+500,Puma Wanneroo,951 Wanneroo Rd,WANNEROO,North of River
+501,Puma Warnbro,649-651 Safety Bay Rd,WARNBRO,South of River
+502,Puma Wattle Grove,604 Welshpool Rd East,WATTLE GROVE,East/Hills
+503,Puma Welshpool,23 Kewdale Rd,WELSHPOOL,South of River
+504,Puma Wooroloo,3381 Great Eastern Hwy,WUNDOWIE,Northam-Shire
+505,Puma Yanchep,1 Ikara Lane,YANCHEP,North of River
+506,Puma Yokine,398 Hector St,YOKINE,North of River
+507,Refuel Australia - Cataby,10513 Brand Hwy,CATABY,Cataby
+508,Refuel Australia - DMW Supplies,39 Moreton Tce,DONGARA,Dongara
+509,Refuel Australia - Dalwallinu,2 Clinch Rd,DALWALLINU,Dalwallinu
+510,Refuel Australia - Geraldton Flores Road,120 Flores Rd,WEBBERTON,Geraldton
+511,Refuel Australia - Geraldton Willcock Drive,Cnr John Willcock Link & Portway,WEST END,Geraldton
+512,Refuel Australia - Port Hedland,Lot 3 Great Northern Hwy,PORT HEDLAND,Port Hedland
+513,Refuel Australia - Sunset Geraldton,620 Chapman Rd,GLENFIELD,Geraldton
+514,Route 94 Bakers Hill,4641 Great Eastern Hwy,BAKERS HILL,Northam-Shire
+515,S24 Bull Creek,83 Wheatley Dr,BULL CREEK,South of River
+516,S24 Crystal Brook (Lesmurdie),7 Welshpool Rd East,LESMURDIE,East/Hills
+517,S24 Forrestfield,155 Hale Rd,FORRESTFIELD,East/Hills
+518,S24 Kununurra,5 Messmate Way,KUNUNURRA,Kununurra
+519,S24 Redcliffe,419 Great Eastern Hwy,REDCLIFFE,South of River
+520,Shell Alkimos,12 Longstaff Ave,ALKIMOS,North of River
+521,Shell Bullsbrook,2539 Great Northern Hwy,BULLSBROOK,East/Hills
+522,Shell Coles Express Armadale,269 South Western Hwy,ARMADALE,South of River
+523,Shell Coles Express Banksia Grove,1001 Joondalup Dr,BANKSIA GROVE,North of River
+524,Shell Coles Express Bayswater,34 Jackson St,BAYSWATER,North of River
+525,Shell Coles Express Beeliar,8 Durnin Ave,BEELIAR,South of River
+526,Shell Coles Express Bentley,1128 Albany Hwy,BENTLEY,South of River
+527,Shell Coles Express Bibra Lake,1 Timberyard Way,BIBRA LAKE,South of River
+528,Shell Coles Express Bicton,394 Canning Hwy,BICTON,South of River
+529,Shell Coles Express Boulder,35 Frank St,BOULDER,Boulder
+530,Shell Coles Express Brentwood,71 Cranford Ave,BRENTWOOD,South of River
+531,Shell Coles Express Brookdale,1256 Armadale Rd,ARMADALE,South of River
+532,Shell Coles Express Broome,19 Napier Tce,BROOME,Broome
+533,Shell Coles Express Bull Creek,44 Benningfield Rd,BULL CREEK,South of River
+534,Shell Coles Express Bunbury,70 Forrest Ave,SOUTH BUNBURY,Bunbury
+535,Shell Coles Express Bunbury Gateway,9805 Forrest Hwy,GLEN IRIS,Bunbury
+536,Shell Coles Express Bunbury Outbound,9850 Forrest Hwy,VITTORIA,Bunbury
+537,Shell Coles Express Busselton,88 Causeway Rd,BUSSELTON,Busselton-Shire
+538,Shell Coles Express Butler,61 Butler Bvd,BUTLER,North of River
+539,Shell Coles Express Canning Vale,280 Bannister Rd,CANNING VALE,South of River
+540,Shell Coles Express Casuarina (WA),1 Johnson Rd,BERTRAM,South of River
+541,Shell Coles Express Claremont,269 Stirling Hwy,CLAREMONT,North of River
+542,Shell Coles Express Clarkson,36 Ocean Keys Bvd,CLARKSON,North of River
+543,Shell Coles Express Cloverdale,223 Belmont Ave,CLOVERDALE,South of River
+544,Shell Coles Express Collie,57 Johnston St,COLLIE,Collie
+545,Shell Coles Express Dampier,47 Church Rd,DAMPIER,Dampier
+546,Shell Coles Express Dianella,67 Walter Rd West,DIANELLA,North of River
+547,Shell Coles Express Duncraig,193 Warwick Rd,DUNCRAIG,North of River
+548,Shell Coles Express Dunsborough,64 Dunn Bay Rd,DUNSBOROUGH,Busselton-Shire
+549,Shell Coles Express Edgewater,57 Joondalup Dr,EDGEWATER,North of River
+550,Shell Coles Express Ellenbrook,3 Goodwood Cres,ELLENBROOK,North of River
+551,Shell Coles Express Esperance,25 Andrew St,ESPERANCE,Esperance
+552,Shell Coles Express Fitzroy Crossing Roadhouse,87 Great Northern Hwy,FITZROY CROSSING,Fitzroy Cross
+553,Shell Coles Express Forrestfield,2 Strelitzia Ave,FORRESTFIELD,East/Hills
+554,Shell Coles Express Fremantle,101 Hampton Rd,FREMANTLE,South of River
+555,Shell Coles Express Girrawheen,60 Marangaroo Dr,GIRRAWHEEN,North of River
+556,Shell Coles Express Halls Head,14 Guava Way,HALLS HEAD,Mandurah
+557,Shell Coles Express Jolimont,6 Jersey St,JOLIMONT,North of River
+558,Shell Coles Express Karawara,222 Manning Rd,KARAWARA,South of River
+559,Shell Coles Express Karratha,13 Searipple Rd,KARRATHA,Karratha
+560,Shell Coles Express Karratha Travel & Truck,6 Madigan Rd,STOVE HILL,Karratha
+561,Shell Coles Express Kewdale,518 Abernethy Rd,KEWDALE,South of River
+562,Shell Coles Express Kingsley,47 Renegade Way,KINGSLEY,North of River
+563,Shell Coles Express Kununurra Roadhouse,17 Poinciana St,KUNUNURRA,Kununurra
+564,Shell Coles Express Kwinana Beach,4 Beach St,KWINANA BEACH,South of River
+565,Shell Coles Express Lakelands,49 Banksiadale Gte,LAKELANDS,Mandurah
+566,Shell Coles Express Langford,70 Nicholson Rd,LANGFORD,South of River
+567,Shell Coles Express Leeming,51 Farrington St,LEEMING,South of River
+568,Shell Coles Express Maddington,117 Burslem Dr,MADDINGTON,South of River
+569,Shell Coles Express Malaga,492 Alexander Dr,MALAGA,North of River
+570,Shell Coles Express Mandurah,Cnr Pinjarra Rd & Watson Dr,BARRAGUP,Murray
+571,Shell Coles Express Margaret River,77 Bussell Hwy,MARGARET RIVER,Augusta-M River
+572,Shell Coles Express Meekatharra Roadhouse,Lot 821 Main St,MEEKATHARRA,Meekatharra
+573,Shell Coles Express Middle Swan,Lot 46 Great Northern Hwy,MIDDLE SWAN,East/Hills
+574,Shell Coles Express Mosman Park,582 Stirling Hwy,MOSMAN PARK,North of River
+575,Shell Coles Express Mount Lawley,253 Walcott St,NORTH PERTH,North of River
+576,Shell Coles Express Mount Pleasant,1 The Esplanade,MOUNT PLEASANT,South of River
+577,Shell Coles Express Myaree,69 North Lake Rd,MYAREE,South of River
+578,Shell Coles Express Northam,10 Beamish Ave,NORTHAM,Northam-Shire
+579,Shell Coles Express Ocean Reef,6 Marina Bvd,OCEAN REEF,North of River
+580,Shell Coles Express Osborne Park,11 Roberts St West,OSBORNE PARK,North of River
+581,Shell Coles Express Palmyra,80 Carrington St,PALMYRA,South of River
+582,Shell Coles Express Perth,480 William St,PERTH,North of River
+583,Shell Coles Express Port Hedland,Lot 2065 Wilson St,PORT HEDLAND,Port Hedland
+584,Shell Coles Express Scarborough,205 West Coast Hwy,SCARBOROUGH,North of River
+585,Shell Coles Express Singleton,492 Mandurah Rd,SINGLETON,South of River
+586,Shell Coles Express South Hedland Roadhouse,Lot 5553 Great Northern Hwy,WEDGEFIELD,Port Hedland
+587,Shell Coles Express South Perth,3 Canning Hwy,SOUTH PERTH,South of River
+588,Shell Coles Express Southern River,216 Lakey St,SOUTHERN RIVER,South of River
+589,Shell Coles Express Tarcoola,2 Fortyn Ct,MAHOMETS FLATS,Geraldton
+590,Shell Coles Express Upper Swan Roadhouse,1333 Great Northern Hwy,UPPER SWAN,East/Hills
+591,Shell Coles Express Vasse,2 Napoleon Prom,VASSE,Busselton-Shire
+592,Shell Coles Express Victoria Park,66 Kent St,EAST VICTORIA PARK,South of River
+593,Shell Coles Express Waikiki,1-9 Gnangara Dr,WAIKIKI,South of River
+594,Shell Coles Express Wangara,1 Niche Pde,WANGARA,North of River
+595,Shell Coles Express Wanneroo Pearsall,621 Wanneroo Rd,WANNEROO,North of River
+596,Shell Coles Express Warwick (WA),274 Erindale Rd,WARWICK,North of River
+597,Shell Coles Express Wembley,337 Cambridge St,WEMBLEY,North of River
+598,Shell Coles Express West Perth,30 Thomas St,WEST PERTH,North of River
+599,Shell Coles Express Westfield,88 Champion Dr,SEVILLE GROVE,South of River
+600,Shell Coles Express Willetton,239-247 High Rd,WILLETTON,South of River
+601,Shell Coles Express Wonthella,115 North West Coastal Hwy,WONTHELLA,Geraldton
+602,Shell Denmark,69 South Coast Hwy,DENMARK,Denmark
+603,Shell Fresh Trading Co Ascot,472 Great Eastern Hwy,ASCOT,South of River
+604,Shell Fresh Trading Co Welshpool,36 Welshpool Rd,WELSHPOOL,South of River
+605,Shell Gidgegannup,2095 Toodyay Rd,GIDGEGANNUP,East/Hills
+606,Shell High Wycombe,1100 Abernethy Rd,HIGH WYCOMBE,East/Hills
+607,Shell Jarrahdale,2 Jarrahdale Rd,JARRAHDALE,South of River
+608,Shell Lower King Liquor & General,629 Lower King Rd,LOWER KING,Albany
+609,Shell Narrogin,44 Egerton St,NARROGIN,Narrogin
+610,Shell Williams,24 Albany Hwy,WILLIAMS,Williams
+611,Shinju BP,101 Guy St,BROOME,Broome
+612,Smart Mart Newman,Lot 1 Newman Dr,NEWMAN,Newman
+613,Smart Mart Pure Convenience - Flores Rd,280 Fourth St,WONTHELLA,Geraldton
+614,Smiths Shell Service,86 Avon Tce,YORK,York
+615,Tomeo's Service Station,1287 Brookton Hwy,KARRAGULLEN,East/Hills
+616,United Albany Central,309 Albany Hwy,MOUNT MELVILLE,Albany
+617,United Anketell,5 Albina Ave,ANKETELL,South of River
+618,United Anketell South,805 Thomas Rd,ANKETELL,South of River
+619,United Armadale,178 South Western Hwy,ARMADALE,South of River
+620,United Bassendean,335 Collier Rd,BASSENDEAN,North of River
+621,United Bibra Lake,13 Whyalla Ct,BIBRA LAKE,South of River
+622,United Boulder Kalgoorlie,26 Davis St,BOULDER,Boulder
+623,United Broome,49 Reid Rd,CABLE BEACH,Broome
+624,United Byford,801-803 South Western Hwy,BYFORD,South of River
+625,United Denmark,45 South Coast Hwy,DENMARK,Denmark
+626,United East Victoria Park,916 Albany Hwy,EAST VICTORIA PARK,South of River
+627,United Ellenbrook,3 Locke Lane,ELLENBROOK,North of River
+628,United Hamilton Hill,9 Winterfold Rd,HAMILTON HILL,South of River
+629,United Hepburn Heights,4 Walter Padbury Bvd,PADBURY,North of River
+630,United Kellerberrin Truck Stop,150 Massingham St,KELLERBERRIN,Kellerberrin
+631,United Kewdale Truck Stop,410-412 Orrong Rd,KEWDALE,South of River
+632,United Kojonup,138 Albany Hwy,KOJONUP,Kojonup
+633,United Leda,2 Feilman Dr,LEDA,South of River
+634,United Lexia Truck Stop,779 Gnangara Rd,LEXIA,North of River
+635,United Maddington Truck Stop,13 Stebbing Rd,MADDINGTON,South of River
+636,United Manjimup,1 Rose St,MANJIMUP,Manjimup
+637,United Mount Barker Roadhouse Truck Stop,31763 Albany Hwy,MOUNT BARKER,Mt Barker
+638,United Mt Lawley,791 Beaufort St,MOUNT LAWLEY,North of River
+639,United Myaree,182 Leach Hwy,MYAREE,South of River
+640,United Naval Base Truck Stop,13 Lionel St,NAVAL BASE,South of River
+641,United Neerabup Truck Stop,2038 Wanneroo Rd,NEERABUP,North of River
+642,United Northbridge,31 Fitzgerald St,NORTHBRIDGE,North of River
+643,United Osborne Park,479 Scarborough Beach Rd,OSBORNE PARK,North of River
+644,United Perth Airport Truck Stop,8 Paltridge Rd,PERTH AIRPORT,South of River
+645,United Pinjarra Truck Stop,1602 Pinjarra Rd,PINJARRA,Murray
+646,United Quinns Rocks,121 Quinns Rd,QUINNS ROCKS,North of River
+647,United Rangeway Truck Stop,50 Rifle Range Rd,RANGEWAY,Geraldton
+648,United Roleystone,11 Wygonda Rd,ROLEYSTONE,East/Hills
+649,United South Lake,49 Berrigan Dr,SOUTH LAKE,South of River
+650,United Southern River,Lot 101 Terrier Pl,SOUTHERN RIVER,South of River
+651,United Swanbourne,2 Servetus St,SWANBOURNE,North of River
+652,United Tapping,1369 Wanneroo Rd,WANNEROO,North of River
+653,United Vasse Truck Stop,210 Northerly St,VASSE,Busselton-Shire
+654,Walpole IGA Pioneer Store,10 Nockolds St,WALPOLE,Manjimup
+655,Waroona Roadhouse,32 South Western Hwy,WAROONA,Waroona
+656,Whalley's United Beachway,260 Middleton Rd,MIRA MAR,Albany
+657,Whalley's United Uberwash,225-227 Albany Hwy,MOUNT MELVILLE,Albany
+658,X Convenience Alkimos,58 Montana Cres,ALKIMOS,North of River
+659,Youngs Siding General Store,19 Station St,YOUNGS SIDING,Albany

@@ -67,14 +67,21 @@ class TestFuelWatchPipeline(unittest.TestCase):
     def test_standardise_columns_and_outlier_filtering(self) -> None:
         dirty_df = pd.DataFrame(
             {
-                "PUBLISH_DATE": ["01/01/2024", "01/01/2024", "01/01/2024", "01/01/2024", "01/01/2024"],
-                "TRADING_NAME": ["St 1", "St 2", "St 3", "St 4", "St 5"],
-                "BRAND_DESCRIPTION": ["7-Eleven", "BP", "7-Eleven", "Ampol", "Independent"],
-                "PRODUCT_DESCRIPTION": ["ULP", "Diesel", "ULP", "ULP", "ULP"],
-                "PRODUCT_PRICE": [185.9, 190.0, 45.0, 999.9, 180.0],
-                "ADDRESS": ["A1", "A2", "A3", "A4", "A5"],
-                "LOCATION": ["PERTH", "PERTH", "PERTH", "PERTH", "PERTH"],
-                "AREA_DESCRIPTION": ["Metro", "Metro", "Metro", "Metro", "Metro"],
+                "PUBLISH_DATE": [
+                    "01/01/2024",
+                    "01/01/2024",
+                    "01/01/2024",
+                    "01/01/2024",
+                    "01/01/2024",
+                    "01/01/2024",
+                ],
+                "TRADING_NAME": ["St 1", "St 1", "St 2", "St 3", "St 4", "St 5"],
+                "BRAND_DESCRIPTION": ["7-Eleven", "7-Eleven", "BP", "7-Eleven", "Ampol", "Independent"],
+                "PRODUCT_DESCRIPTION": ["ULP", "PULP", "Diesel", "ULP", "ULP", "ULP"],
+                "PRODUCT_PRICE": [185.9, 200.9, 190.0, 45.0, 999.9, 180.0],
+                "ADDRESS": ["A1", "A1", "A2", "A3", "A4", "A5"],
+                "LOCATION": ["PERTH", "PERTH", "PERTH", "PERTH", "PERTH", "PERTH"],
+                "AREA_DESCRIPTION": ["Metro", "Metro", "Metro", "Metro", "Metro", "Metro"],
             }
         )
         std_df = standardise_columns(dirty_df)
@@ -82,7 +89,7 @@ class TestFuelWatchPipeline(unittest.TestCase):
         self.assertIn("price_cpl", std_df.columns)
 
         cleaned = clean_station_dataframe(dirty_df, self.config)
-        # Only row 0 (7-Eleven, ULP, 185.9) should survive ULP filter, [70, 350] outlier filter, and brand filter
+        # Only row 0 (7-Eleven, exact ULP, 185.9) should survive; PULP (200.9) must be excluded
         self.assertEqual(len(cleaned), 1)
         self.assertEqual(cleaned.iloc[0]["brand_clean"], "7-Eleven")
         self.assertAlmostEqual(float(cleaned.iloc[0]["price_cpl"]), 185.9)
@@ -156,6 +163,7 @@ class TestFuelWatchPipeline(unittest.TestCase):
                 "dim_location",
                 "fact_daily_brand_pricing",
                 "fact_market_drop_response",
+                "fact_station_monthly_pricing",
             },
         )
 
@@ -164,18 +172,30 @@ class TestFuelWatchPipeline(unittest.TestCase):
         dim_location = tables["dim_location"]
         fact_daily = tables["fact_daily_brand_pricing"]
         fact_drop = tables["fact_market_drop_response"]
+        fact_station_monthly = tables["fact_station_monthly_pricing"]
 
         self.assertEqual(len(dim_date), 120)
         self.assertEqual(len(dim_brand), 9)
+        self.assertIn("is_major_network", dim_brand.columns)
         self.assertGreater(len(dim_location), 0)
         self.assertEqual(len(fact_daily), 120 * 9)
         self.assertFalse(fact_drop.empty)
+        self.assertFalse(fact_station_monthly.empty)
+
+        # Ensure duplicate date and brand text columns are excluded from Fact tables
+        self.assertNotIn("date", fact_daily.columns)
+        self.assertNotIn("brand_clean", fact_daily.columns)
+        self.assertNotIn("event_date", fact_drop.columns)
+        self.assertNotIn("brand_clean", fact_drop.columns)
 
         # Verify foreign key referential integrity between Fact and Dimension tables
         self.assertTrue(set(fact_daily["date_key"]).issubset(set(dim_date["date_key"])))
         self.assertTrue(set(fact_daily["brand_key"]).issubset(set(dim_brand["brand_key"])))
         self.assertTrue(set(fact_drop["event_date_key"]).issubset(set(dim_date["date_key"])))
         self.assertTrue(set(fact_drop["brand_key"]).issubset(set(dim_brand["brand_key"])))
+        self.assertTrue(set(fact_station_monthly["date_key"]).issubset(set(dim_date["date_key"])))
+        self.assertTrue(set(fact_station_monthly["brand_key"]).issubset(set(dim_brand["brand_key"])))
+        self.assertTrue(set(fact_station_monthly["location_key"]).issubset(set(dim_location["location_key"])))
 
     def test_end_to_end_pipeline_and_cli_execution(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:

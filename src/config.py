@@ -44,7 +44,7 @@ DEFAULT_COLUMN_MAP: Dict[str, str] = {
     "area_description": "region",
 }
 
-DEFAULT_ULP_KEYWORDS: List[str] = ["unleaded", "ulp", "e10"]
+DEFAULT_ULP_KEYWORDS: List[str] = ["ulp", "unleaded petrol", "e10"]
 
 DEFAULT_BRANDS_OF_INTEREST: List[str] = [
     "7-Eleven",
@@ -56,6 +56,16 @@ DEFAULT_BRANDS_OF_INTEREST: List[str] = [
     "Puma",
     "Woolworths",
     "Metro",
+]
+
+MAJOR_BENCHMARK_BRANDS: List[str] = [
+    "7-Eleven",
+    "Ampol",
+    "BP",
+    "Coles Express",
+    "Shell",
+    "United",
+    "Puma",
 ]
 
 BRAND_COLOURS: Dict[str, str] = {
@@ -120,6 +130,7 @@ class PipelineConfig:
 
     market_drop_threshold_cpl: float = -3.0
     follower_drop_target_cpl: float = 2.0
+    min_episode_gap_days: int = 5
     response_lag_window_days: int = 14
     response_curve_days: int = 7
 
@@ -131,6 +142,7 @@ class PipelineConfig:
     column_map: Dict[str, str] = field(default_factory=lambda: dict(DEFAULT_COLUMN_MAP))
     ulp_keywords: List[str] = field(default_factory=lambda: list(DEFAULT_ULP_KEYWORDS))
     brands_of_interest: List[str] = field(default_factory=lambda: list(DEFAULT_BRANDS_OF_INTEREST))
+    major_benchmark_brands: List[str] = field(default_factory=lambda: list(MAJOR_BENCHMARK_BRANDS))
     brand_colours: Dict[str, str] = field(default_factory=lambda: dict(BRAND_COLOURS))
 
     @property

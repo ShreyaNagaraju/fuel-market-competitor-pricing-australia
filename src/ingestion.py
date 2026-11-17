@@ -101,11 +101,11 @@ def clean_station_dataframe(
     df["price_cpl"] = pd.to_numeric(df["price_cpl"], errors="coerce")
     df = df.dropna(subset=["date", "price_cpl", "brand", "product_name"]).copy()
 
-    ulp_pattern = "|".join(cfg.ulp_keywords)
-    ulp_mask = df["product_name"].astype(str).str.lower().str.contains(ulp_pattern, na=False)
+    ulp_exact_set = {kw.strip().lower() for kw in cfg.ulp_keywords}
+    ulp_mask = df["product_name"].astype(str).str.strip().str.lower().isin(ulp_exact_set)
     df_ulp = df[ulp_mask].copy()
     logger.info(
-        "Filtered to Unleaded Petrol: %s rows retained (%s dropped)",
+        "Filtered to exact Unleaded Petrol (ULP): %s rows retained (%s dropped)",
         f"{len(df_ulp):,}",
         f"{len(df) - len(df_ulp):,}",
     )
@@ -127,6 +127,10 @@ def clean_station_dataframe(
     df_filtered = df_clean[df_clean["brand"].astype(str).str.contains(brand_pattern, case=False, na=False)].copy()
     df_filtered["brand_clean"] = df_filtered["brand"].apply(normalise_brand)
     df_filtered = df_filtered[df_filtered["brand_clean"].isin(cfg.brands_of_interest)].copy()
+
+    dedup_subset = [c for c in ["date", "station_name", "address"] if c in df_filtered.columns]
+    if len(dedup_subset) >= 2:
+        df_filtered = df_filtered.drop_duplicates(subset=dedup_subset, keep="first").copy()
 
     final_cols = ["date", "brand_clean", "price_cpl", "suburb", "region", "station_name", "address"]
     final_cols = [c for c in final_cols if c in df_filtered.columns]
@@ -261,5 +265,20 @@ def generate_synthetic_fuelwatch_data(
                         "source_file": f"FuelWatchRetail-{current_date.strftime('%m-%Y')}.csv",
                     }
                 )
+                if st_idx == 1:
+                    records.append(
+                        {
+                            "PUBLISH_DATE": current_date.strftime("%d/%m/%Y"),
+                            "TRADING_NAME": f"{brand_label} Station {st_idx}",
+                            "BRAND_DESCRIPTION": brand_label,
+                            "PRODUCT_DESCRIPTION": "PULP",
+                            "PRODUCT_PRICE": round(price + 15.0, 1),
+                            "ADDRESS": f"{100 + st_idx} Albany Hwy",
+                            "LOCATION": f"SUBURB_{st_idx}",
+                            "AREA_DESCRIPTION": area,
+                            "REGION_DESCRIPTION": region,
+                            "source_file": f"FuelWatchRetail-{current_date.strftime('%m-%Y')}.csv",
+                        }
+                    )
 
     return pd.DataFrame(records)

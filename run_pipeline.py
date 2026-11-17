@@ -153,6 +153,8 @@ def main(argv: Optional[List[str]] = None) -> int:
         logger.info("Market positioning summary:\n%s", results["positioning_summary"].to_string())
         logger.info("Daily price spread statistics: %s", results["spread_stats"])
         logger.info("Competitor response lag summary:\n%s", results["lag_summary"].to_string())
+        logger.info("Weekly cycle profile by day of week:\n%s", results["dow_summary"].to_string(index=False))
+        logger.info("Weekly cycle hike leadership:\n%s", results["hike_summary"].to_string(index=False))
 
     if args.stage in ("all", "report"):
         if df_daily is None:

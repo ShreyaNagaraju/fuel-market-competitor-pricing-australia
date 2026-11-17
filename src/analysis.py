@@ -107,15 +107,23 @@ def compute_daily_price_spread(
     wide: pd.DataFrame,
     config: Optional[PipelineConfig] = None,
 ) -> Tuple[pd.Series, pd.Series, Dict[str, float]]:
-    """Compute daily price spread between the focus brand and the cheapest competitor."""
+    """Compute daily price spread between the focus brand and the cheapest major competitor."""
     cfg = config or PipelineConfig()
     if cfg.focus_brand not in wide.columns:
         raise ValueError(f"Focus brand '{cfg.focus_brand}' not found in wide price matrix.")
 
-    competitors = [c for c in wide.columns if c != cfg.focus_brand]
-    daily_min_competitor = wide[competitors].min(axis=1)
+    major_competitors = [
+        c for c in wide.columns if c != cfg.focus_brand and c in cfg.major_benchmark_brands
+    ]
+    all_competitors = [c for c in wide.columns if c != cfg.focus_brand]
+    if not major_competitors:
+        major_competitors = all_competitors
 
-    spread = (wide[cfg.focus_brand] - daily_min_competitor).dropna()
+    daily_min_major = wide[major_competitors].min(axis=1)
+    daily_min_all = wide[all_competitors].min(axis=1)
+
+    spread = (wide[cfg.focus_brand] - daily_min_major).dropna()
+    spread_all = (wide[cfg.focus_brand] - daily_min_all).dropna()
     spread_smooth = spread.rolling(window=cfg.rolling_window_days, min_periods=cfg.rolling_min_periods).mean()
 
     stats = {
@@ -127,6 +135,10 @@ def compute_daily_price_spread(
         "pct_days_at_or_below_cheapest": round(float((spread <= 0).mean() * 100.0), 1),
         "days_above_threshold": int((spread > cfg.high_spread_threshold_cpl).sum()),
         "pct_days_above_threshold": round(float((spread > cfg.high_spread_threshold_cpl).mean() * 100.0), 1),
+        "all_brands_mean_spread_cpl": round(float(spread_all.mean()), 2),
+        "all_brands_pct_days_above_threshold": round(
+            float((spread_all > cfg.high_spread_threshold_cpl).mean() * 100.0), 1
+        ),
     }
     return spread, spread_smooth, stats
 
@@ -261,12 +273,25 @@ def identify_market_drop_events(
     wide: pd.DataFrame,
     config: Optional[PipelineConfig] = None,
 ) -> Tuple[pd.DatetimeIndex, pd.Series]:
-    """Identify trading days where the daily market average falls by at least the drop threshold."""
+    """Identify discrete market drop episodes (de-clustered with a minimum gap between episodes)."""
     cfg = config or PipelineConfig()
-    market_avg = wide.mean(axis=1)
+    peer_cols = [c for c in wide.columns if c != cfg.focus_brand and c in cfg.major_benchmark_brands]
+    if not peer_cols:
+        peer_cols = [c for c in wide.columns if c != cfg.focus_brand] or list(wide.columns)
+
+    market_avg = wide[peer_cols].mean(axis=1)
     market_change = market_avg.diff()
-    drop_events = market_change[market_change <= cfg.market_drop_threshold_cpl].index
-    return drop_events, market_change
+    raw_drop_dates = market_change[market_change <= cfg.market_drop_threshold_cpl].index
+
+    episode_dates: List[pd.Timestamp] = []
+    last_date: Optional[pd.Timestamp] = None
+    for d in raw_drop_dates:
+        ts = pd.Timestamp(d)
+        if last_date is None or (ts - last_date).days >= cfg.min_episode_gap_days:
+            episode_dates.append(ts)
+            last_date = ts
+
+    return pd.DatetimeIndex(episode_dates), market_change
 
 
 def compute_competitor_response_lag(
@@ -456,6 +481,190 @@ def plot_response_curves(
     return fig
 
 
+def compute_weekly_cycle_profile(
+    daily_avg_df: pd.DataFrame,
+    config: Optional[PipelineConfig] = None,
+) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """Compute day-of-week price cycle profiles, spreads, and Wednesday restoration hike leadership."""
+    cfg = config or PipelineConfig()
+    df = daily_avg_df.copy()
+    df["date"] = pd.to_datetime(df["date"])
+    wide, _ = build_wide_price_matrix(df, cfg)
+
+    major_competitors = [
+        c for c in wide.columns if c != cfg.focus_brand and c in cfg.major_benchmark_brands
+    ]
+    if not major_competitors:
+        major_competitors = [c for c in wide.columns if c != cfg.focus_brand]
+
+    # Station-weighted daily market average
+    weighted_daily = (
+        df.assign(weighted_px=df["avg_price"] * df["station_count"])
+        .groupby("date", as_index=True)
+        .agg(total_px=("weighted_px", "sum"), total_st=("station_count", "sum"))
+    )
+    weighted_market = weighted_daily["total_px"] / weighted_daily["total_st"].replace(0, np.nan)
+
+    cycle_frame = pd.DataFrame(index=wide.index)
+    cycle_frame["day_of_week"] = cycle_frame.index.dayofweek + 1
+    cycle_frame["day_name"] = cycle_frame.index.day_name()
+    cycle_frame["focus_price_cpl"] = wide.get(cfg.focus_brand)
+    cycle_frame["market_weighted_cpl"] = weighted_market
+    cycle_frame["cheapest_major_cpl"] = wide[major_competitors].min(axis=1)
+    cycle_frame["spread_vs_cheapest_major_cpl"] = (
+        cycle_frame["focus_price_cpl"] - cycle_frame["cheapest_major_cpl"]
+    )
+    cycle_frame["spread_vs_market_weighted_cpl"] = (
+        cycle_frame["focus_price_cpl"] - cycle_frame["market_weighted_cpl"]
+    )
+
+    dow_summary = (
+        cycle_frame.groupby(["day_of_week", "day_name"], as_index=False)
+        .agg(
+            focus_avg_cpl=("focus_price_cpl", "mean"),
+            market_weighted_cpl=("market_weighted_cpl", "mean"),
+            cheapest_major_cpl=("cheapest_major_cpl", "mean"),
+            spread_vs_cheapest_major_cpl=("spread_vs_cheapest_major_cpl", "mean"),
+            spread_vs_market_weighted_cpl=("spread_vs_market_weighted_cpl", "mean"),
+        )
+        .sort_values("day_of_week")
+        .round(2)
+    )
+
+    # Restoration hike leadership (weekly cycle jumps where peer market rises >= +4.0 cpl)
+    peer_change = wide[major_competitors].mean(axis=1).diff()
+    raw_hike_dates = peer_change[peer_change >= 4.0].index
+    hike_episodes: List[pd.Timestamp] = []
+    last_hike: Optional[pd.Timestamp] = None
+    for d in raw_hike_dates:
+        ts = pd.Timestamp(d)
+        if last_hike is None or (ts - last_hike).days >= cfg.min_episode_gap_days:
+            hike_episodes.append(ts)
+            last_hike = ts
+
+    daily_diffs = wide.diff()
+    hike_rows: List[Dict[str, object]] = []
+    for brand in wide.columns:
+        same_day_hikes = 0
+        next_day_hikes = 0
+        total_ep = 0
+        avg_hike_size: List[float] = []
+        for h_date in hike_episodes:
+            idx = wide.index.get_loc(h_date)
+            if not isinstance(idx, int) or idx < 1 or idx + 1 >= len(wide):
+                continue
+            if pd.isna(wide.iloc[idx - 1][brand]):
+                continue
+            total_ep += 1
+            d0_jump = float(daily_diffs.iloc[idx][brand]) if not pd.isna(daily_diffs.iloc[idx][brand]) else 0.0
+            d1_jump = (
+                float(daily_diffs.iloc[idx + 1][brand])
+                if not pd.isna(daily_diffs.iloc[idx + 1][brand])
+                else 0.0
+            )
+            if d0_jump >= 4.0:
+                same_day_hikes += 1
+                avg_hike_size.append(d0_jump)
+            elif d1_jump >= 4.0:
+                next_day_hikes += 1
+                avg_hike_size.append(d1_jump)
+
+        if total_ep > 0:
+            hike_rows.append(
+                {
+                    "brand": brand,
+                    "hike_episodes": total_ep,
+                    "same_day_hike_rate": round(same_day_hikes / total_ep, 2),
+                    "within_1d_hike_rate": round((same_day_hikes + next_day_hikes) / total_ep, 2),
+                    "mean_hike_cpl": round(float(np.mean(avg_hike_size)), 1) if avg_hike_size else 0.0,
+                }
+            )
+
+    if hike_rows:
+        hike_summary = pd.DataFrame(hike_rows).sort_values("same_day_hike_rate", ascending=False)
+    else:
+        hike_summary = pd.DataFrame(
+            columns=["brand", "hike_episodes", "same_day_hike_rate", "within_1d_hike_rate", "mean_hike_cpl"]
+        )
+    return dow_summary, hike_summary
+
+
+def plot_weekly_cycle(
+    dow_summary: pd.DataFrame,
+    save_path: Optional[Path] = None,
+    config: Optional[PipelineConfig] = None,
+) -> plt.Figure:
+    """Render Chart 07: Weekly Day-of-Week Price Cycle Trough & Restoration Spread Profile."""
+    cfg = config or PipelineConfig()
+    apply_chart_style()
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
+    days = dow_summary["day_name"].str.slice(0, 3).tolist()
+
+    ax1.plot(
+        days,
+        dow_summary["focus_avg_cpl"],
+        marker="o",
+        linewidth=2.4,
+        color="#007041",
+        label=cfg.focus_brand,
+    )
+    ax1.plot(
+        days,
+        dow_summary["market_weighted_cpl"],
+        marker="s",
+        linewidth=1.8,
+        linestyle="--",
+        color="#333333",
+        label="Market avg (station-weighted)",
+    )
+    ax1.plot(
+        days,
+        dow_summary["cheapest_major_cpl"],
+        marker="^",
+        linewidth=1.6,
+        linestyle=":",
+        color="#0057A8",
+        label="Cheapest major rival",
+    )
+    ax1.set_title("Weekly Price Cycle by Day of Week (cpl)", fontweight="bold", pad=12)
+    ax1.set_ylabel("Average ULP Price (cents per litre)")
+    ax1.legend()
+
+    bar_colours = [
+        "#007041" if val <= 0 else ("#E63329" if val > 5.0 else "#FFC72C")
+        for val in dow_summary["spread_vs_cheapest_major_cpl"]
+    ]
+    bars = ax2.bar(days, dow_summary["spread_vs_cheapest_major_cpl"], color=bar_colours, width=0.55)
+    ax2.axhline(0, color="#333333", linewidth=0.9)
+    ax2.axhline(5.0, color="#E63329", linewidth=1.0, linestyle="--", label="5.0 cpl risk threshold")
+    for bar, val in zip(bars, dow_summary["spread_vs_cheapest_major_cpl"]):
+        ax2.text(
+            bar.get_x() + bar.get_width() / 2.0,
+            val + (0.4 if val >= 0 else -1.0),
+            f"{val:+.1f}",
+            ha="center",
+            va="bottom" if val >= 0 else "top",
+            fontsize=9,
+            fontweight="bold",
+        )
+    ax2.set_title(
+        f"{cfg.focus_brand} Spread vs Cheapest Major Rival by Day of Week",
+        fontweight="bold",
+        pad=12,
+    )
+    ax2.set_ylabel("Spread (cpl)")
+    ax2.legend()
+
+    plt.tight_layout()
+    if save_path:
+        Path(save_path).parent.mkdir(parents=True, exist_ok=True)
+        fig.savefig(save_path, dpi=cfg.chart_dpi, bbox_inches="tight")
+        logger.info("Saved weekly cycle chart to %s", save_path)
+    plt.close(fig)
+    return fig
+
+
 def run_competitor_analysis_pipeline(
     daily_avg_df: Optional[pd.DataFrame] = None,
     config: Optional[PipelineConfig] = None,
@@ -470,6 +679,7 @@ def run_competitor_analysis_pipeline(
     spread, spread_smooth, spread_stats = compute_daily_price_spread(wide, cfg)
     lag_df, lag_summary = compute_competitor_response_lag(wide, cfg)
     _, avg_curves_df = compute_response_curves(wide, cfg)
+    dow_summary, hike_summary = compute_weekly_cycle_profile(df, cfg)
 
     if save_charts:
         cfg.outputs_dir.mkdir(parents=True, exist_ok=True)
@@ -478,6 +688,7 @@ def run_competitor_analysis_pipeline(
         plot_spread_distribution(spread, cfg.outputs_dir / "03_spread_distribution.png", cfg)
         plot_response_lag(lag_summary, cfg.outputs_dir / "04_response_lag.png", cfg)
         plot_response_curves(avg_curves_df, cfg.outputs_dir / "05_response_curves.png", cfg)
+        plot_weekly_cycle(dow_summary, cfg.outputs_dir / "07_weekly_price_cycle.png", cfg)
 
     return {
         "wide": wide,
@@ -489,4 +700,6 @@ def run_competitor_analysis_pipeline(
         "lag_df": lag_df,
         "lag_summary": lag_summary,
         "avg_curves_df": avg_curves_df,
+        "dow_summary": dow_summary,
+        "hike_summary": hike_summary,
     }
