@@ -18,6 +18,8 @@ The project quantifies 7-Eleven's competitive positioning, daily price spread re
 
 ## Power BI Executive Dashboard (PL-300 Kimball Star Schema)
 
+Interactive workbook: [`powerbi/Fuel_pricing_analysis.pbix`](powerbi/Fuel_pricing_analysis.pbix) | Data Model & DAX Reference: [`powerbi/POWER_BI_STAR_SCHEMA_GUIDE.md`](powerbi/POWER_BI_STAR_SCHEMA_GUIDE.md)
+
 ### Page 1: Executive Market Positioning & Spread Overview
 ![Page 1: Executive Market Positioning & Spread Overview](outputs/powerbi_01_executive_overview.jpg)
 
@@ -47,6 +49,7 @@ fuel-market-competitor-pricing-australia/
 │   ├── reporting.py                     # Automated weekly briefing generator and 8-week baseline anomaly detector
 │   └── star_schema.py                   # Kimball Star Schema builder & Parquet/CSV exporter for Power BI
 ├── powerbi/
+│   ├── Fuel_pricing_analysis.pbix       # Interactive 3-page Power BI executive dashboard workbook
 │   └── POWER_BI_STAR_SCHEMA_GUIDE.md    # Kimball ER diagram, DAX measure library, and PL-300 report layout
 ├── tests/
 │   └── test_pipeline.py                 # Automated unit & integration test suite (7 end-to-end test cases)
